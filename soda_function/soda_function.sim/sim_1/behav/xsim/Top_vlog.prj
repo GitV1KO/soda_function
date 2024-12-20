@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../soda_function.srcs/sources_1/ip/pll" \
+"../../../../soda_function.srcs/sources_1/ip/pll/pll_clk_wiz.v" \
+"../../../../soda_function.srcs/sources_1/ip/pll/pll.v" \
+"../../../../soda_function.srcs/sources_1/new/TFT_char.v" \
+"../../../../soda_function.srcs/sources_1/new/key_filter.v" \
+"../../../../soda_function.srcs/sources_1/new/one_second_timer.v" \
+"../../../../soda_function.srcs/sources_1/new/tft_ctrl.v" \
+"../../../../soda_function.srcs/sources_1/new/Top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

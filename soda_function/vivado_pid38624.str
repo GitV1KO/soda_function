@@ -1,0 +1,132 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:40:23 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 38624
+License: Customer
+
+Current time: 	Tue Dec 17 21:46:05 CST 2024
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 20
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 1
+Available disk space: 25 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	F:/ElectronicWork/Software/vivado2019.2/Vivado/2019.2/tps/win64/jre9.0.4
+Java executable location: 	F:/ElectronicWork/Software/vivado2019.2/Vivado/2019.2/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	1
+User home directory: C:/Users/admin
+User working directory: F:/ElectronicWork/Projects/vivado2019.2/soda_function
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: F:/ElectronicWork/Software/vivado2019.2/Vivado
+HDI_APPROOT: F:/ElectronicWork/Software/vivado2019.2/Vivado/2019.2
+RDI_DATADIR: F:/ElectronicWork/Software/vivado2019.2/Vivado/2019.2/data
+RDI_BINDIR: F:/ElectronicWork/Software/vivado2019.2/Vivado/2019.2/bin
+
+Vivado preferences file location: C:/Users/admin/AppData/Roaming/Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: C:/Users/admin/AppData/Roaming/Xilinx/Vivado/2019.2/
+Vivado layouts directory: C:/Users/admin/AppData/Roaming/Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	F:/ElectronicWork/Software/vivado2019.2/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	F:/ElectronicWork/Projects/vivado2019.2/soda_function/vivado.log
+Vivado journal file location: 	F:/ElectronicWork/Projects/vivado2019.2/soda_function/vivado.jou
+Engine tmp dir: 	F:/ElectronicWork/Projects/vivado2019.2/soda_function/.Xil/Vivado-38624-V1KO-PC
+
+Xilinx Environment Variables
+----------------------------
+NO_XILINX_DATA_LICENSE: HIDDEN
+XILINX: F:/ElectronicWork/Software/vivado2019.2/Vivado/2019.2/ids_lite/ISE
+XILINX_DSP: F:/ElectronicWork/Software/vivado2019.2/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: F:/ElectronicWork/Software/vivado2019.2/Vivado/2019.2
+XILINX_SDK: F:/ElectronicWork/Software/vivado2019.2/Vitis/2019.2
+XILINX_VITIS: F:/ElectronicWork/Software/vivado2019.2/Vitis/2019.2
+XILINX_VIVADO: F:/ElectronicWork/Software/vivado2019.2/Vivado/2019.2
+XILINX_VIVADO_HLS: F:/ElectronicWork/Software/vivado2019.2/Vivado/2019.2
+
+
+GUI allocated memory:	384 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 940 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 92 MB (+93686kb) [00:00:10]
+// [Engine Memory]: 745 MB (+630045kb) [00:00:10]
+// Opening Vivado Project: F:\ElectronicWork\Projects\vivado2019.2\soda_function\soda_function.xpr. Version: Vivado v2019.2 
+// bB (cr):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 958 MB (+184314kb) [00:00:13]
+// [GUI Memory]: 112 MB (+16329kb) [00:00:13]
+// [GUI Memory]: 118 MB (+805kb) [00:00:14]
+// WARNING: HEventQueue.dispatchEvent() is taking  1909 ms.
+// Tcl Message: open_project F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/admin/Desktop/111/soda_function' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/ElectronicWork/Software/vivado2019.2/Vivado/2019.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 996 MB. GUI used memory: 58 MB. Current time: 12/17/24, 9:46:08 PM CST
+// Project name: soda_function; location: F:/ElectronicWork/Projects/vivado2019.2/soda_function; part: xc7z020clg400-2
+dismissDialog("Open Project"); // bB (cr)
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v)]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), U1 : key_filter (key_filter.v)]", 2, false, false, false, false, false, true); // B (F, cr) - Double Click
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), U1 : key_filter (key_filter.v)]", 2, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), U1 : key_filter (key_filter.v)]", 2, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), U2 : key_filter (key_filter.v)]", 3, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), U2 : key_filter (key_filter.v)]", 3, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), U3 : key_filter (key_filter.v)]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), U3 : key_filter (key_filter.v)]", 4, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), one_second_timer_U1 : one_second_timer (one_second_timer.v)]", 5, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), one_second_timer_U1 : one_second_timer (one_second_timer.v)]", 5, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), TFT_char_U1 : TFT_char (TFT_char.v)]", 6, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), TFT_char_U1 : TFT_char (TFT_char.v)]", 6, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), TFT_char_U1 : TFT_char (TFT_char.v), tft_ctrl_inst : tft_ctrl (tft_ctrl.v)]", 8, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), TFT_char_U1 : TFT_char (TFT_char.v), tft_ctrl_inst : tft_ctrl (tft_ctrl.v)]", 8, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), TFT_char_U1 : TFT_char (TFT_char.v), tft_pic_inst : tft_pic (tft_pic.v)]", 9, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), TFT_char_U1 : TFT_char (TFT_char.v), tft_pic_inst : tft_pic (tft_pic.v)]", 9, false, false, false, false, false, true); // B (F, cr) - Double Click

@@ -1,0 +1,593 @@
+
+*** Running vivado
+    with args -log Top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source Top.tcl -notrace
+Command: synth_design -top Top -part xc7z020clg400-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8488 
+WARNING: [Synth 8-6901] identifier 'miao_cnt' is used before its declaration [F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/sources_1/new/Top.v:93]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1006.871 ; gain = 240.996
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top' [F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/sources_1/new/Top.v:4]
+INFO: [Synth 8-6157] synthesizing module 'key_filter' [F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/sources_1/new/key_filter.v:1]
+	Parameter CNT_20MS bound to: 20'b00000000000000001001 
+INFO: [Synth 8-6155] done synthesizing module 'key_filter' (1#1) [F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/sources_1/new/key_filter.v:1]
+INFO: [Synth 8-6157] synthesizing module 'one_second_timer' [F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/sources_1/new/one_second_timer.v:2]
+	Parameter TARGET_COUNT bound to: 49999999 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'one_second_timer' (2#1) [F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/sources_1/new/one_second_timer.v:2]
+INFO: [Synth 8-6157] synthesizing module 'TFT_char' [F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/sources_1/new/TFT_char.v:3]
+INFO: [Synth 8-6157] synthesizing module 'pll' [F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.runs/synth_1/.Xil/Vivado-29920-V1KO-PC/realtime/pll_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'pll' (3#1) [F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.runs/synth_1/.Xil/Vivado-29920-V1KO-PC/realtime/pll_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'tft_ctrl' [F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/sources_1/new/tft_ctrl.v:3]
+	Parameter H_SYNC bound to: 11'b00000000001 
+	Parameter H_BACK bound to: 11'b00000101110 
+	Parameter H_VALID bound to: 11'b01100100000 
+	Parameter H_FRONT bound to: 11'b00011010010 
+	Parameter H_TOTAL bound to: 11'b10000100001 
+	Parameter V_SYNC bound to: 11'b00000000001 
+	Parameter V_BACK bound to: 11'b00000010111 
+	Parameter V_VALID bound to: 11'b00111100000 
+	Parameter V_FRONT bound to: 11'b00000010110 
+	Parameter V_TOTAL bound to: 11'b01000001110 
+INFO: [Synth 8-6155] done synthesizing module 'tft_ctrl' (4#1) [F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/sources_1/new/tft_ctrl.v:3]
+INFO: [Synth 8-6157] synthesizing module 'tft_pic' [F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/sources_1/new/tft_pic.v:2]
+	Parameter H_VALID bound to: 10'b1100100000 
+	Parameter V_VALID bound to: 10'b0111100000 
+	Parameter CHAR_B_H bound to: 10'b0000001010 
+	Parameter CHAR_B_V bound to: 10'b0011001000 
+	Parameter CHAR_B_H1 bound to: 10'b0001100100 
+	Parameter CHAR_B_V1 bound to: 10'b0011001000 
+	Parameter CHAR_B_H2 bound to: 10'b0010111110 
+	Parameter CHAR_B_V2 bound to: 10'b0011001000 
+	Parameter CHAR_W bound to: 10'b0000010000 
+	Parameter CHAR_H bound to: 10'b0000100000 
+	Parameter BLACK bound to: 16'b0000000000000000 
+	Parameter WHITE bound to: 16'b1111111111111111 
+	Parameter GOLDEN bound to: 16'b1111111011000000 
+WARNING: [Synth 8-3848] Net char[50] in module/entity tft_pic does not have driver. [F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/sources_1/new/tft_pic.v:36]
+WARNING: [Synth 8-3848] Net char[49] in module/entity tft_pic does not have driver. [F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/sources_1/new/tft_pic.v:36]
+WARNING: [Synth 8-3848] Net char[48] in module/entity tft_pic does not have driver. [F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/sources_1/new/tft_pic.v:36]
+WARNING: [Synth 8-3848] Net char[47] in module/entity tft_pic does not have driver. [F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/sources_1/new/tft_pic.v:36]
+WARNING: [Synth 8-3848] Net char[46] in module/entity tft_pic does not have driver. [F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/sources_1/new/tft_pic.v:36]
+WARNING: [Synth 8-3848] Net char[45] in module/entity tft_pic does not have driver. [F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/sources_1/new/tft_pic.v:36]
+WARNING: [Synth 8-3848] Net char[44] in module/entity tft_pic does not have driver. [F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/sources_1/new/tft_pic.v:36]
+WARNING: [Synth 8-3848] Net char[43] in module/entity tft_pic does not have driver. [F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/sources_1/new/tft_pic.v:36]
+WARNING: [Synth 8-3848] Net char[42] in module/entity tft_pic does not have driver. [F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/sources_1/new/tft_pic.v:36]
+WARNING: [Synth 8-3848] Net char[41] in module/entity tft_pic does not have driver. [F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/sources_1/new/tft_pic.v:36]
+WARNING: [Synth 8-3848] Net char[40] in module/entity tft_pic does not have driver. [F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/sources_1/new/tft_pic.v:36]
+WARNING: [Synth 8-3848] Net char[39] in module/entity tft_pic does not have driver. [F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/sources_1/new/tft_pic.v:36]
+WARNING: [Synth 8-3848] Net char[38] in module/entity tft_pic does not have driver. [F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/sources_1/new/tft_pic.v:36]
+WARNING: [Synth 8-3848] Net char[37] in module/entity tft_pic does not have driver. [F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/sources_1/new/tft_pic.v:36]
+WARNING: [Synth 8-3848] Net char[36] in module/entity tft_pic does not have driver. [F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/sources_1/new/tft_pic.v:36]
+WARNING: [Synth 8-3848] Net char[35] in module/entity tft_pic does not have driver. [F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/sources_1/new/tft_pic.v:36]
+WARNING: [Synth 8-3848] Net char[34] in module/entity tft_pic does not have driver. [F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/sources_1/new/tft_pic.v:36]
+WARNING: [Synth 8-3848] Net char[33] in module/entity tft_pic does not have driver. [F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/sources_1/new/tft_pic.v:36]
+WARNING: [Synth 8-3848] Net char[32] in module/entity tft_pic does not have driver. [F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/sources_1/new/tft_pic.v:36]
+WARNING: [Synth 8-3848] Net char[31] in module/entity tft_pic does not have driver. [F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/sources_1/new/tft_pic.v:36]
+WARNING: [Synth 8-3848] Net char[30] in module/entity tft_pic does not have driver. [F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/sources_1/new/tft_pic.v:36]
+WARNING: [Synth 8-3848] Net char[29] in module/entity tft_pic does not have driver. [F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/sources_1/new/tft_pic.v:36]
+WARNING: [Synth 8-3848] Net char[28] in module/entity tft_pic does not have driver. [F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/sources_1/new/tft_pic.v:36]
+WARNING: [Synth 8-3848] Net char[27] in module/entity tft_pic does not have driver. [F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/sources_1/new/tft_pic.v:36]
+WARNING: [Synth 8-3848] Net char[26] in module/entity tft_pic does not have driver. [F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/sources_1/new/tft_pic.v:36]
+WARNING: [Synth 8-3848] Net char[25] in module/entity tft_pic does not have driver. [F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/sources_1/new/tft_pic.v:36]
+WARNING: [Synth 8-3848] Net char[24] in module/entity tft_pic does not have driver. [F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/sources_1/new/tft_pic.v:36]
+WARNING: [Synth 8-3848] Net char[23] in module/entity tft_pic does not have driver. [F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/sources_1/new/tft_pic.v:36]
+WARNING: [Synth 8-3848] Net char[22] in module/entity tft_pic does not have driver. [F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/sources_1/new/tft_pic.v:36]
+WARNING: [Synth 8-3848] Net char[21] in module/entity tft_pic does not have driver. [F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/sources_1/new/tft_pic.v:36]
+WARNING: [Synth 8-3848] Net char[20] in module/entity tft_pic does not have driver. [F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/sources_1/new/tft_pic.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'tft_pic' (5#1) [F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/sources_1/new/tft_pic.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'TFT_char' (6#1) [F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/sources_1/new/TFT_char.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Top' (7#1) [F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/sources_1/new/Top.v:4]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1086.102 ; gain = 320.227
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1086.102 ; gain = 320.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1086.102 ; gain = 320.227
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.108 . Memory (MB): peak = 1086.102 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/sources_1/ip/pll/pll/pll_in_context.xdc] for cell 'TFT_char_U1/pll'
+Finished Parsing XDC File [f:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/sources_1/ip/pll/pll/pll_in_context.xdc] for cell 'TFT_char_U1/pll'
+Parsing XDC File [F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/constrs_1/new/soda_function.xdc]
+Finished Parsing XDC File [F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/constrs_1/new/soda_function.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/constrs_1/new/soda_function.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1255.367 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1255.367 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1255.367 ; gain = 489.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1255.367 ; gain = 489.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clk. (constraint file  f:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/sources_1/ip/pll/pll/pll_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clk. (constraint file  f:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/sources_1/ip/pll/pll/pll_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for TFT_char_U1/pll. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1255.367 ; gain = 489.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1255.367 ; gain = 489.492
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |tft_pic__GB0  |           1|     27140|
+|2     |tft_pic__GB1  |           1|     27272|
+|3     |tft_pic__GB2  |           1|     13333|
+|4     |tft_pic__GB3  |           1|     26114|
+|5     |tft_pic__GB4  |           1|     26114|
+|6     |tft_pic__GB5  |           1|     27782|
+|7     |tft_pic__GB6  |           1|     26114|
+|8     |TFT_char__GC0 |           1|       418|
+|9     |Top__GC0      |           1|      2460|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 2     
+	   2 Input     20 Bit       Adders := 3     
+	   2 Input     11 Bit       Adders := 4     
+	   2 Input      9 Bit       Adders := 4     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	              512 Bit    Registers := 20    
+	               24 Bit    Registers := 2     
+	               20 Bit    Registers := 3     
+	               16 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 3     
+	   2 Input     20 Bit        Muxes := 6     
+	  11 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 20    
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module tft_pic 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 4     
++---Registers : 
+	              512 Bit    Registers := 20    
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  11 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+Module tft_ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 4     
++---Registers : 
+	               11 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 1     
+Module key_filter__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
++---Registers : 
+	               20 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module key_filter__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
++---Registers : 
+	               20 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module key_filter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
++---Registers : 
+	               20 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module one_second_timer 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_3/\miao_cnt_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][33] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][34] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][35] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][36] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][37] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][38] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][40] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][42] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][43] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][44] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][45] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][46] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][47] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][48] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][49] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][50] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][51] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][52] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][53] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][54] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][55] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][56] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][57] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][58] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][59] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][60] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][61] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][62] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][63] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][64] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][65] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][66] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][67] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][68] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][69] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\char_reg[0][70] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\char_reg[0][71] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\char_reg[0][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\char_reg[0][73] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][74] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][75] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][76] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][77] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][78] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][79] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][80] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][81] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][82] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][83] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][84] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\char_reg[0][85] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][86] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][87] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][88] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\char_reg[0][89] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\char_reg[0][90] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][91] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][92] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][93] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][94] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][95] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][96] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][97] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][98] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'pix_data_reg[0]' (FDC) to 'pix_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'pix_data_reg[1]' (FDC) to 'pix_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'pix_data_reg[2]' (FDC) to 'pix_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'pix_data_reg[3]' (FDC) to 'pix_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'pix_data_reg[4]' (FDC) to 'pix_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'pix_data_reg[5]' (FDC) to 'pix_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'pix_data_reg[6]' (FDC) to 'pix_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'pix_data_reg[7]' (FDC) to 'pix_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'pix_data_reg[9]' (FDC) to 'pix_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'pix_data_reg[10]' (FDC) to 'pix_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'pix_data_reg[11]' (FDC) to 'pix_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'pix_data_reg[12]' (FDC) to 'pix_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'pix_data_reg[13]' (FDC) to 'pix_data_reg[14]'
+INFO: [Synth 8-3886] merging instance 'pix_data_reg[14]' (FDC) to 'pix_data_reg[15]'
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:01:06 . Memory (MB): peak = 1255.367 ; gain = 489.492
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |tft_pic__GB0  |           1|      7170|
+|2     |tft_pic__GB1  |           1|      6718|
+|3     |tft_pic__GB2  |           1|      2358|
+|4     |tft_pic__GB3  |           1|      8190|
+|5     |tft_pic__GB4  |           1|      8190|
+|6     |tft_pic__GB5  |           1|      9429|
+|7     |tft_pic__GB6  |           1|      8190|
+|8     |TFT_char__GC0 |           1|       226|
+|9     |Top__GC0      |           1|       692|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:01:11 . Memory (MB): peak = 1255.367 ; gain = 489.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+info: optimization accepted worst group hill climbing move (-25285.0/oG.CP 290.0ps)
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:02 ; elapsed = 00:03:06 . Memory (MB): peak = 1697.730 ; gain = 931.855
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |tft_pic__GB1  |           1|       841|
+|2     |tft_pic__GB4  |           1|      1032|
+|3     |tft_pic__GB6  |           1|      1032|
+|4     |TFT_char__GC0 |           1|       211|
+|5     |Top_GT0       |           1|      5208|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:03 ; elapsed = 00:03:07 . Memory (MB): peak = 1697.730 ; gain = 931.855
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:05 ; elapsed = 00:03:10 . Memory (MB): peak = 1697.730 ; gain = 931.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:05 ; elapsed = 00:03:10 . Memory (MB): peak = 1697.730 ; gain = 931.855
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:05 ; elapsed = 00:03:10 . Memory (MB): peak = 1697.730 ; gain = 931.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:05 ; elapsed = 00:03:10 . Memory (MB): peak = 1697.730 ; gain = 931.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:05 ; elapsed = 00:03:10 . Memory (MB): peak = 1697.730 ; gain = 931.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:05 ; elapsed = 00:03:10 . Memory (MB): peak = 1697.730 ; gain = 931.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |pll           |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |pll    |     1|
+|2     |CARRY4 |    46|
+|3     |LUT1   |    27|
+|4     |LUT2   |   114|
+|5     |LUT3   |   148|
+|6     |LUT4   |   173|
+|7     |LUT5   |   107|
+|8     |LUT6   |   960|
+|9     |MUXF7  |   173|
+|10    |MUXF8  |    69|
+|11    |FDCE   |   190|
+|12    |FDRE   |     4|
+|13    |IBUF   |     3|
+|14    |OBUF   |    21|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------------------+-----------------+------+
+|      |Instance              |Module           |Cells |
++------+----------------------+-----------------+------+
+|1     |top                   |                 |  2037|
+|2     |  TFT_char_U1         |TFT_char         |  1572|
+|3     |    tft_ctrl_inst     |tft_ctrl         |  1190|
+|4     |    tft_pic_inst      |tft_pic          |   379|
+|5     |  U1                  |key_filter       |    54|
+|6     |  U2                  |key_filter_0     |    82|
+|7     |  U3                  |key_filter_1     |   102|
+|8     |  one_second_timer_U1 |one_second_timer |    76|
++------+----------------------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:05 ; elapsed = 00:03:10 . Memory (MB): peak = 1697.730 ; gain = 931.855
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:01 ; elapsed = 00:03:07 . Memory (MB): peak = 1697.730 ; gain = 762.590
+Synthesis Optimization Complete : Time (s): cpu = 00:02:05 ; elapsed = 00:03:11 . Memory (MB): peak = 1697.730 ; gain = 931.855
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1697.730 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 288 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1697.730 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+145 Infos, 32 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:08 ; elapsed = 00:03:15 . Memory (MB): peak = 1697.730 ; gain = 1226.305
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1697.730 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.runs/synth_1/Top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_utilization_synth.rpt -pb Top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 20 01:08:01 2024...

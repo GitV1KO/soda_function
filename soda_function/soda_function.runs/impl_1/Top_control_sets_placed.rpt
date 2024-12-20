@@ -1,0 +1,86 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri Dec 20 01:10:34 2024
+| Host         : V1KO-PC running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Top_control_sets_placed.rpt
+| Design       : Top
+| Device       : xc7z020
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |     8 |
+|    Minimum number of control sets                        |     8 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    22 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |     8 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     5 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               4 |            1 |
+| No           | No                    | Yes                    |              81 |           22 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |             109 |           26 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------+------------------------------------------+------------------------------------------+------------------+----------------+
+|          Clock Signal          |               Enable Signal              |             Set/Reset Signal             | Slice Load Count | Bel Load Count |
++--------------------------------+------------------------------------------+------------------------------------------+------------------+----------------+
+|  sys_clk_IBUF_BUFG             |                                          |                                          |                1 |              4 |
+|  TFT_char_U1/pll/inst/clk_out1 | TFT_char_U1/tft_ctrl_inst/cnt_v0         | TFT_char_U1/tft_ctrl_inst/rst_cnt_reg[3] |                3 |             11 |
+|  TFT_char_U1/pll/inst/clk_out1 |                                          | TFT_char_U1/tft_ctrl_inst/rst_cnt_reg[3] |                7 |             12 |
+|  sys_clk_IBUF_BUFG             | U1/E[0]                                  | one_second_timer_U1/reset                |                4 |             24 |
+|  sys_clk_IBUF_BUFG             | U1/key_flag_reg_0[0]                     | one_second_timer_U1/reset                |                6 |             24 |
+|  sys_clk_IBUF_BUFG             | U3/key_flag_reg_0                        | one_second_timer_U1/reset                |                6 |             24 |
+|  sys_clk_IBUF_BUFG             | one_second_timer_U1/count_reg[0]_i_1_n_0 | one_second_timer_U1/reset                |                7 |             26 |
+|  sys_clk_IBUF_BUFG             |                                          | one_second_timer_U1/reset                |               15 |             69 |
++--------------------------------+------------------------------------------+------------------------------------------+------------------+----------------+
+
+

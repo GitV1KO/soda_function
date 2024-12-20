@@ -1,0 +1,1472 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri Dec 20 01:10:54 2024
+| Host         : V1KO-PC running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -file Top_timing_summary_routed.rpt -pb Top_timing_summary_routed.pb -rpx Top_timing_summary_routed.rpx -warn_on_violation
+| Design       : Top
+| Device       : 7z020-clg400
+| Speed File   : -2  PRODUCTION 1.11 2014-09-11
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 171 register/latch pins with no clock driven by root clock pin: sys_clk (HIGH)
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 436 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 3 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 13 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+     17.325        0.000                      0                   34        0.225        0.000                      0                   34        3.000        0.000                       0                    29  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock                         Waveform(ns)       Period(ns)      Frequency(MHz)
+-----                         ------------       ----------      --------------
+TFT_char_U1/pll/inst/clk_in1  {0.000 5.000}      10.000          100.000         
+  clk_out1_pll                {0.000 15.152}     30.303          33.000          
+  clkfbout_pll                {0.000 25.000}     50.000          20.000          
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock                             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----                             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+TFT_char_U1/pll/inst/clk_in1                                                                                                                                                    3.000        0.000                       0                     1  
+  clk_out1_pll                     17.325        0.000                      0                   34        0.225        0.000                      0                   34       14.652        0.000                       0                    25  
+  clkfbout_pll                                                                                                                                                                 48.408        0.000                       0                     3  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  TFT_char_U1/pll/inst/clk_in1
+  To Clock:  TFT_char_U1/pll/inst/clk_in1
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        3.000ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         TFT_char_U1/pll/inst/clk_in1
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { TFT_char_U1/pll/inst/clk_in1 }
+
+Check Type        Corner  Lib Pin            Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period        n/a     MMCME2_ADV/CLKIN1  n/a            1.249         10.000      8.751      MMCME2_ADV_X1Y0  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKIN1
+Max Period        n/a     MMCME2_ADV/CLKIN1  n/a            100.000       10.000      90.000     MMCME2_ADV_X1Y0  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKIN1
+Low Pulse Width   Slow    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X1Y0  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKIN1
+Low Pulse Width   Fast    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X1Y0  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKIN1
+High Pulse Width  Slow    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X1Y0  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKIN1
+High Pulse Width  Fast    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X1Y0  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKIN1
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_out1_pll
+  To Clock:  clk_out1_pll
+
+Setup :            0  Failing Endpoints,  Worst Slack       17.325ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.225ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack       14.652ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             17.325ns  (required time - arrival time)
+  Source:                 TFT_char_U1/tft_ctrl_inst/cnt_v_reg[4]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_pll  {rise@0.000ns fall@15.152ns period=30.303ns})
+  Destination:            TFT_char_U1/tft_pic_inst/pix_data_reg[15]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_pll  {rise@0.000ns fall@15.152ns period=30.303ns})
+  Path Group:             clk_out1_pll
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            30.303ns  (clk_out1_pll rise@30.303ns - clk_out1_pll rise@0.000ns)
+  Data Path Delay:        12.833ns  (logic 3.077ns (23.976%)  route 9.756ns (76.024%))
+  Logic Levels:           14  (CARRY4=1 LUT2=3 LUT4=1 LUT6=8 MUXF7=1)
+  Clock Path Skew:        -0.023ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.344ns = ( 31.647 - 30.303 ) 
+    Source Clock Delay      (SCD):    1.497ns
+    Clock Pessimism Removal (CPR):    0.130ns
+  Clock Uncertainty:      0.151ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.294ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_pll rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  sys_clk_IBUF_BUFG_inst/O
+                         net (fo=172, routed)         1.552     1.552    TFT_char_U1/pll/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.232    -1.680 r  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.597    -0.083    TFT_char_U1/pll/inst/clk_out1_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.085     0.002 r  TFT_char_U1/pll/inst/clkout1_buf/O
+                         net (fo=24, routed)          1.495     1.497    TFT_char_U1/tft_ctrl_inst/clk_out1
+    SLICE_X99Y70         FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_v_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X99Y70         FDCE (Prop_fdce_C_Q)         0.379     1.876 r  TFT_char_U1/tft_ctrl_inst/cnt_v_reg[4]/Q
+                         net (fo=8, routed)           1.051     2.927    TFT_char_U1/tft_ctrl_inst/cnt_v_reg[4]
+    SLICE_X101Y72        LUT2 (Prop_lut2_I1_O)        0.121     3.048 r  TFT_char_U1/tft_ctrl_inst/cnt_v[6]_i_2/O
+                         net (fo=2, routed)           0.288     3.336    TFT_char_U1/tft_ctrl_inst/cnt_v[6]_i_2_n_0
+    SLICE_X100Y72        LUT6 (Prop_lut6_I1_O)        0.268     3.604 f  TFT_char_U1/tft_ctrl_inst/tft_de_OBUF_inst_i_5/O
+                         net (fo=2, routed)           0.359     3.963    TFT_char_U1/tft_ctrl_inst/tft_de_OBUF_inst_i_5_n_0
+    SLICE_X102Y72        LUT6 (Prop_lut6_I0_O)        0.105     4.068 f  TFT_char_U1/tft_ctrl_inst/pix_data[15]_i_128/O
+                         net (fo=1, routed)           0.439     4.507    TFT_char_U1/tft_ctrl_inst/pix_data[15]_i_128_n_0
+    SLICE_X103Y69        LUT6 (Prop_lut6_I5_O)        0.105     4.612 f  TFT_char_U1/tft_ctrl_inst/pix_data[15]_i_33/O
+                         net (fo=62, routed)          0.997     5.609    TFT_char_U1/tft_ctrl_inst/pix_y[9]
+    SLICE_X99Y68         LUT2 (Prop_lut2_I1_O)        0.105     5.714 r  TFT_char_U1/tft_ctrl_inst/pix_data[15]_i_61/O
+                         net (fo=101, routed)         0.428     6.142    TFT_char_U1/tft_ctrl_inst/pix_data[15]_i_136_n_0
+    SLICE_X98Y71         CARRY4 (Prop_carry4_CYINIT_O[0])
+                                                      0.417     6.559 f  TFT_char_U1/tft_ctrl_inst/pix_data_reg[15]_i_106/O[0]
+                         net (fo=178, routed)         2.467     9.026    TFT_char_U1/tft_ctrl_inst/cnt_v_reg[0]_0[0]
+    SLICE_X101Y82        LUT2 (Prop_lut2_I1_O)        0.257     9.283 r  TFT_char_U1/tft_ctrl_inst/pix_data[15]_i_501/O
+                         net (fo=5, routed)           0.414     9.697    TFT_char_U1/tft_ctrl_inst/pix_data[15]_i_501_n_0
+    SLICE_X102Y80        LUT6 (Prop_lut6_I1_O)        0.267     9.964 r  TFT_char_U1/tft_ctrl_inst/pix_data[15]_i_551/O
+                         net (fo=9, routed)           0.646    10.611    TFT_char_U1/tft_ctrl_inst/pix_data[15]_i_551_n_0
+    SLICE_X100Y81        LUT4 (Prop_lut4_I1_O)        0.126    10.737 f  TFT_char_U1/tft_ctrl_inst/pix_data[15]_i_496/O
+                         net (fo=1, routed)           0.660    11.397    TFT_char_U1/tft_ctrl_inst/pix_data[15]_i_496_n_0
+    SLICE_X99Y81         LUT6 (Prop_lut6_I0_O)        0.283    11.680 f  TFT_char_U1/tft_ctrl_inst/pix_data[15]_i_240/O
+                         net (fo=1, routed)           0.000    11.680    TFT_char_U1/tft_ctrl_inst/pix_data[15]_i_240_n_0
+    SLICE_X99Y81         MUXF7 (Prop_muxf7_I1_O)      0.182    11.862 f  TFT_char_U1/tft_ctrl_inst/pix_data_reg[15]_i_103/O
+                         net (fo=1, routed)           0.453    12.315    TFT_char_U1/tft_ctrl_inst/pix_data_reg[15]_i_103_n_0
+    SLICE_X100Y79        LUT6 (Prop_lut6_I2_O)        0.252    12.567 r  TFT_char_U1/tft_ctrl_inst/pix_data[15]_i_27/O
+                         net (fo=1, routed)           0.371    12.938    TFT_char_U1/tft_ctrl_inst/pix_data[15]_i_27_n_0
+    SLICE_X100Y79        LUT6 (Prop_lut6_I0_O)        0.105    13.043 r  TFT_char_U1/tft_ctrl_inst/pix_data[15]_i_6/O
+                         net (fo=1, routed)           1.182    14.225    TFT_char_U1/tft_ctrl_inst/pix_data[15]_i_6_n_0
+    SLICE_X101Y68        LUT6 (Prop_lut6_I4_O)        0.105    14.330 r  TFT_char_U1/tft_ctrl_inst/pix_data[15]_i_1/O
+                         net (fo=1, routed)           0.000    14.330    TFT_char_U1/tft_pic_inst/p_0_in[0]
+    SLICE_X101Y68        FDCE                                         r  TFT_char_U1/tft_pic_inst/pix_data_reg[15]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_pll rise edge)
+                                                     30.303    30.303 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000    30.303 r  sys_clk_IBUF_BUFG_inst/O
+                         net (fo=172, routed)         1.386    31.689    TFT_char_U1/pll/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.915    28.774 r  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.454    30.228    TFT_char_U1/pll/inst/clk_out1_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.077    30.305 r  TFT_char_U1/pll/inst/clkout1_buf/O
+                         net (fo=24, routed)          1.342    31.647    TFT_char_U1/tft_pic_inst/clk_out1
+    SLICE_X101Y68        FDCE                                         r  TFT_char_U1/tft_pic_inst/pix_data_reg[15]/C
+                         clock pessimism              0.130    31.777    
+                         clock uncertainty           -0.151    31.626    
+    SLICE_X101Y68        FDCE (Setup_fdce_C_D)        0.030    31.656    TFT_char_U1/tft_pic_inst/pix_data_reg[15]
+  -------------------------------------------------------------------
+                         required time                         31.656    
+                         arrival time                         -14.330    
+  -------------------------------------------------------------------
+                         slack                                 17.325    
+
+Slack (MET) :             25.987ns  (required time - arrival time)
+  Source:                 TFT_char_U1/tft_ctrl_inst/cnt_h_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_pll  {rise@0.000ns fall@15.152ns period=30.303ns})
+  Destination:            TFT_char_U1/tft_ctrl_inst/cnt_v_reg[2]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_pll  {rise@0.000ns fall@15.152ns period=30.303ns})
+  Path Group:             clk_out1_pll
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            30.303ns  (clk_out1_pll rise@30.303ns - clk_out1_pll rise@0.000ns)
+  Data Path Delay:        4.135ns  (logic 0.853ns (20.630%)  route 3.282ns (79.370%))
+  Logic Levels:           4  (LUT4=2 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.060ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.342ns = ( 31.645 - 30.303 ) 
+    Source Clock Delay      (SCD):    1.498ns
+    Clock Pessimism Removal (CPR):    0.096ns
+  Clock Uncertainty:      0.151ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.294ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_pll rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  sys_clk_IBUF_BUFG_inst/O
+                         net (fo=172, routed)         1.552     1.552    TFT_char_U1/pll/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.232    -1.680 r  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.597    -0.083    TFT_char_U1/pll/inst/clk_out1_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.085     0.002 r  TFT_char_U1/pll/inst/clkout1_buf/O
+                         net (fo=24, routed)          1.496     1.498    TFT_char_U1/tft_ctrl_inst/clk_out1
+    SLICE_X102Y70        FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_h_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X102Y70        FDCE (Prop_fdce_C_Q)         0.433     1.931 r  TFT_char_U1/tft_ctrl_inst/cnt_h_reg[0]/Q
+                         net (fo=17, routed)          1.212     3.143    TFT_char_U1/tft_ctrl_inst/cnt_h_reg_n_0_[0]
+    SLICE_X103Y71        LUT4 (Prop_lut4_I0_O)        0.105     3.248 r  TFT_char_U1/tft_ctrl_inst/cnt_h[0]_i_4/O
+                         net (fo=1, routed)           0.652     3.900    TFT_char_U1/tft_ctrl_inst/cnt_h[0]_i_4_n_0
+    SLICE_X102Y71        LUT5 (Prop_lut5_I1_O)        0.105     4.005 f  TFT_char_U1/tft_ctrl_inst/cnt_h[0]_i_2/O
+                         net (fo=13, routed)          0.628     4.633    TFT_char_U1/tft_ctrl_inst/cnt_v0
+    SLICE_X100Y72        LUT6 (Prop_lut6_I5_O)        0.105     4.738 f  TFT_char_U1/tft_ctrl_inst/cnt_v[9]_i_2/O
+                         net (fo=4, routed)           0.790     5.528    TFT_char_U1/tft_ctrl_inst/cnt_v[9]_i_2_n_0
+    SLICE_X99Y70         LUT4 (Prop_lut4_I3_O)        0.105     5.633 r  TFT_char_U1/tft_ctrl_inst/cnt_v[2]_i_1/O
+                         net (fo=1, routed)           0.000     5.633    TFT_char_U1/tft_ctrl_inst/p_0_in__0[2]
+    SLICE_X99Y70         FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_v_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_pll rise edge)
+                                                     30.303    30.303 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000    30.303 r  sys_clk_IBUF_BUFG_inst/O
+                         net (fo=172, routed)         1.386    31.689    TFT_char_U1/pll/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.915    28.774 r  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.454    30.228    TFT_char_U1/pll/inst/clk_out1_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.077    30.305 r  TFT_char_U1/pll/inst/clkout1_buf/O
+                         net (fo=24, routed)          1.340    31.645    TFT_char_U1/tft_ctrl_inst/clk_out1
+    SLICE_X99Y70         FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_v_reg[2]/C
+                         clock pessimism              0.096    31.741    
+                         clock uncertainty           -0.151    31.590    
+    SLICE_X99Y70         FDCE (Setup_fdce_C_D)        0.030    31.620    TFT_char_U1/tft_ctrl_inst/cnt_v_reg[2]
+  -------------------------------------------------------------------
+                         required time                         31.620    
+                         arrival time                          -5.633    
+  -------------------------------------------------------------------
+                         slack                                 25.987    
+
+Slack (MET) :             26.016ns  (required time - arrival time)
+  Source:                 TFT_char_U1/tft_ctrl_inst/cnt_h_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_pll  {rise@0.000ns fall@15.152ns period=30.303ns})
+  Destination:            TFT_char_U1/tft_ctrl_inst/cnt_v_reg[3]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_pll  {rise@0.000ns fall@15.152ns period=30.303ns})
+  Path Group:             clk_out1_pll
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            30.303ns  (clk_out1_pll rise@30.303ns - clk_out1_pll rise@0.000ns)
+  Data Path Delay:        4.145ns  (logic 0.863ns (20.821%)  route 3.282ns (79.179%))
+  Logic Levels:           4  (LUT4=1 LUT5=2 LUT6=1)
+  Clock Path Skew:        -0.060ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.342ns = ( 31.645 - 30.303 ) 
+    Source Clock Delay      (SCD):    1.498ns
+    Clock Pessimism Removal (CPR):    0.096ns
+  Clock Uncertainty:      0.151ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.294ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_pll rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  sys_clk_IBUF_BUFG_inst/O
+                         net (fo=172, routed)         1.552     1.552    TFT_char_U1/pll/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.232    -1.680 r  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.597    -0.083    TFT_char_U1/pll/inst/clk_out1_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.085     0.002 r  TFT_char_U1/pll/inst/clkout1_buf/O
+                         net (fo=24, routed)          1.496     1.498    TFT_char_U1/tft_ctrl_inst/clk_out1
+    SLICE_X102Y70        FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_h_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X102Y70        FDCE (Prop_fdce_C_Q)         0.433     1.931 r  TFT_char_U1/tft_ctrl_inst/cnt_h_reg[0]/Q
+                         net (fo=17, routed)          1.212     3.143    TFT_char_U1/tft_ctrl_inst/cnt_h_reg_n_0_[0]
+    SLICE_X103Y71        LUT4 (Prop_lut4_I0_O)        0.105     3.248 r  TFT_char_U1/tft_ctrl_inst/cnt_h[0]_i_4/O
+                         net (fo=1, routed)           0.652     3.900    TFT_char_U1/tft_ctrl_inst/cnt_h[0]_i_4_n_0
+    SLICE_X102Y71        LUT5 (Prop_lut5_I1_O)        0.105     4.005 f  TFT_char_U1/tft_ctrl_inst/cnt_h[0]_i_2/O
+                         net (fo=13, routed)          0.628     4.633    TFT_char_U1/tft_ctrl_inst/cnt_v0
+    SLICE_X100Y72        LUT6 (Prop_lut6_I5_O)        0.105     4.738 f  TFT_char_U1/tft_ctrl_inst/cnt_v[9]_i_2/O
+                         net (fo=4, routed)           0.790     5.528    TFT_char_U1/tft_ctrl_inst/cnt_v[9]_i_2_n_0
+    SLICE_X99Y70         LUT5 (Prop_lut5_I4_O)        0.115     5.643 r  TFT_char_U1/tft_ctrl_inst/cnt_v[3]_i_1/O
+                         net (fo=1, routed)           0.000     5.643    TFT_char_U1/tft_ctrl_inst/p_0_in__0[3]
+    SLICE_X99Y70         FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_v_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_pll rise edge)
+                                                     30.303    30.303 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000    30.303 r  sys_clk_IBUF_BUFG_inst/O
+                         net (fo=172, routed)         1.386    31.689    TFT_char_U1/pll/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.915    28.774 r  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.454    30.228    TFT_char_U1/pll/inst/clk_out1_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.077    30.305 r  TFT_char_U1/pll/inst/clkout1_buf/O
+                         net (fo=24, routed)          1.340    31.645    TFT_char_U1/tft_ctrl_inst/clk_out1
+    SLICE_X99Y70         FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_v_reg[3]/C
+                         clock pessimism              0.096    31.741    
+                         clock uncertainty           -0.151    31.590    
+    SLICE_X99Y70         FDCE (Setup_fdce_C_D)        0.069    31.659    TFT_char_U1/tft_ctrl_inst/cnt_v_reg[3]
+  -------------------------------------------------------------------
+                         required time                         31.659    
+                         arrival time                          -5.643    
+  -------------------------------------------------------------------
+                         slack                                 26.016    
+
+Slack (MET) :             26.133ns  (required time - arrival time)
+  Source:                 TFT_char_U1/tft_ctrl_inst/cnt_h_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_pll  {rise@0.000ns fall@15.152ns period=30.303ns})
+  Destination:            TFT_char_U1/tft_ctrl_inst/cnt_v_reg[9]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_pll  {rise@0.000ns fall@15.152ns period=30.303ns})
+  Path Group:             clk_out1_pll
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            30.303ns  (clk_out1_pll rise@30.303ns - clk_out1_pll rise@0.000ns)
+  Data Path Delay:        3.989ns  (logic 0.853ns (21.386%)  route 3.136ns (78.614%))
+  Logic Levels:           4  (LUT4=1 LUT5=1 LUT6=2)
+  Clock Path Skew:        -0.062ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.340ns = ( 31.643 - 30.303 ) 
+    Source Clock Delay      (SCD):    1.498ns
+    Clock Pessimism Removal (CPR):    0.096ns
+  Clock Uncertainty:      0.151ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.294ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_pll rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  sys_clk_IBUF_BUFG_inst/O
+                         net (fo=172, routed)         1.552     1.552    TFT_char_U1/pll/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.232    -1.680 r  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.597    -0.083    TFT_char_U1/pll/inst/clk_out1_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.085     0.002 r  TFT_char_U1/pll/inst/clkout1_buf/O
+                         net (fo=24, routed)          1.496     1.498    TFT_char_U1/tft_ctrl_inst/clk_out1
+    SLICE_X102Y70        FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_h_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X102Y70        FDCE (Prop_fdce_C_Q)         0.433     1.931 r  TFT_char_U1/tft_ctrl_inst/cnt_h_reg[0]/Q
+                         net (fo=17, routed)          1.212     3.143    TFT_char_U1/tft_ctrl_inst/cnt_h_reg_n_0_[0]
+    SLICE_X103Y71        LUT4 (Prop_lut4_I0_O)        0.105     3.248 r  TFT_char_U1/tft_ctrl_inst/cnt_h[0]_i_4/O
+                         net (fo=1, routed)           0.652     3.900    TFT_char_U1/tft_ctrl_inst/cnt_h[0]_i_4_n_0
+    SLICE_X102Y71        LUT5 (Prop_lut5_I1_O)        0.105     4.005 f  TFT_char_U1/tft_ctrl_inst/cnt_h[0]_i_2/O
+                         net (fo=13, routed)          0.628     4.633    TFT_char_U1/tft_ctrl_inst/cnt_v0
+    SLICE_X100Y72        LUT6 (Prop_lut6_I5_O)        0.105     4.738 f  TFT_char_U1/tft_ctrl_inst/cnt_v[9]_i_2/O
+                         net (fo=4, routed)           0.643     5.382    TFT_char_U1/tft_ctrl_inst/cnt_v[9]_i_2_n_0
+    SLICE_X99Y72         LUT6 (Prop_lut6_I0_O)        0.105     5.487 r  TFT_char_U1/tft_ctrl_inst/cnt_v[9]_i_1/O
+                         net (fo=1, routed)           0.000     5.487    TFT_char_U1/tft_ctrl_inst/p_0_in__0[9]
+    SLICE_X99Y72         FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_v_reg[9]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_pll rise edge)
+                                                     30.303    30.303 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000    30.303 r  sys_clk_IBUF_BUFG_inst/O
+                         net (fo=172, routed)         1.386    31.689    TFT_char_U1/pll/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.915    28.774 r  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.454    30.228    TFT_char_U1/pll/inst/clk_out1_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.077    30.305 r  TFT_char_U1/pll/inst/clkout1_buf/O
+                         net (fo=24, routed)          1.338    31.643    TFT_char_U1/tft_ctrl_inst/clk_out1
+    SLICE_X99Y72         FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_v_reg[9]/C
+                         clock pessimism              0.096    31.739    
+                         clock uncertainty           -0.151    31.588    
+    SLICE_X99Y72         FDCE (Setup_fdce_C_D)        0.032    31.620    TFT_char_U1/tft_ctrl_inst/cnt_v_reg[9]
+  -------------------------------------------------------------------
+                         required time                         31.620    
+                         arrival time                          -5.487    
+  -------------------------------------------------------------------
+                         slack                                 26.133    
+
+Slack (MET) :             26.417ns  (required time - arrival time)
+  Source:                 TFT_char_U1/tft_ctrl_inst/cnt_h_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_pll  {rise@0.000ns fall@15.152ns period=30.303ns})
+  Destination:            TFT_char_U1/tft_ctrl_inst/cnt_v_reg[1]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_pll  {rise@0.000ns fall@15.152ns period=30.303ns})
+  Path Group:             clk_out1_pll
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            30.303ns  (clk_out1_pll rise@30.303ns - clk_out1_pll rise@0.000ns)
+  Data Path Delay:        3.707ns  (logic 0.853ns (23.012%)  route 2.854ns (76.988%))
+  Logic Levels:           4  (LUT3=1 LUT4=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.060ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.342ns = ( 31.645 - 30.303 ) 
+    Source Clock Delay      (SCD):    1.498ns
+    Clock Pessimism Removal (CPR):    0.096ns
+  Clock Uncertainty:      0.151ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.294ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_pll rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  sys_clk_IBUF_BUFG_inst/O
+                         net (fo=172, routed)         1.552     1.552    TFT_char_U1/pll/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.232    -1.680 r  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.597    -0.083    TFT_char_U1/pll/inst/clk_out1_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.085     0.002 r  TFT_char_U1/pll/inst/clkout1_buf/O
+                         net (fo=24, routed)          1.496     1.498    TFT_char_U1/tft_ctrl_inst/clk_out1
+    SLICE_X102Y70        FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_h_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X102Y70        FDCE (Prop_fdce_C_Q)         0.433     1.931 r  TFT_char_U1/tft_ctrl_inst/cnt_h_reg[0]/Q
+                         net (fo=17, routed)          1.212     3.143    TFT_char_U1/tft_ctrl_inst/cnt_h_reg_n_0_[0]
+    SLICE_X103Y71        LUT4 (Prop_lut4_I0_O)        0.105     3.248 r  TFT_char_U1/tft_ctrl_inst/cnt_h[0]_i_4/O
+                         net (fo=1, routed)           0.652     3.900    TFT_char_U1/tft_ctrl_inst/cnt_h[0]_i_4_n_0
+    SLICE_X102Y71        LUT5 (Prop_lut5_I1_O)        0.105     4.005 f  TFT_char_U1/tft_ctrl_inst/cnt_h[0]_i_2/O
+                         net (fo=13, routed)          0.628     4.633    TFT_char_U1/tft_ctrl_inst/cnt_v0
+    SLICE_X100Y72        LUT6 (Prop_lut6_I5_O)        0.105     4.738 f  TFT_char_U1/tft_ctrl_inst/cnt_v[9]_i_2/O
+                         net (fo=4, routed)           0.362     5.100    TFT_char_U1/tft_ctrl_inst/cnt_v[9]_i_2_n_0
+    SLICE_X99Y70         LUT3 (Prop_lut3_I2_O)        0.105     5.205 r  TFT_char_U1/tft_ctrl_inst/cnt_v[1]_i_1/O
+                         net (fo=1, routed)           0.000     5.205    TFT_char_U1/tft_ctrl_inst/p_0_in__0[1]
+    SLICE_X99Y70         FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_v_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_pll rise edge)
+                                                     30.303    30.303 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000    30.303 r  sys_clk_IBUF_BUFG_inst/O
+                         net (fo=172, routed)         1.386    31.689    TFT_char_U1/pll/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.915    28.774 r  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.454    30.228    TFT_char_U1/pll/inst/clk_out1_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.077    30.305 r  TFT_char_U1/pll/inst/clkout1_buf/O
+                         net (fo=24, routed)          1.340    31.645    TFT_char_U1/tft_ctrl_inst/clk_out1
+    SLICE_X99Y70         FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_v_reg[1]/C
+                         clock pessimism              0.096    31.741    
+                         clock uncertainty           -0.151    31.590    
+    SLICE_X99Y70         FDCE (Setup_fdce_C_D)        0.032    31.622    TFT_char_U1/tft_ctrl_inst/cnt_v_reg[1]
+  -------------------------------------------------------------------
+                         required time                         31.622    
+                         arrival time                          -5.205    
+  -------------------------------------------------------------------
+                         slack                                 26.417    
+
+Slack (MET) :             26.494ns  (required time - arrival time)
+  Source:                 TFT_char_U1/tft_ctrl_inst/cnt_h_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_pll  {rise@0.000ns fall@15.152ns period=30.303ns})
+  Destination:            TFT_char_U1/tft_ctrl_inst/cnt_v_reg[1]/CE
+                            (rising edge-triggered cell FDCE clocked by clk_out1_pll  {rise@0.000ns fall@15.152ns period=30.303ns})
+  Path Group:             clk_out1_pll
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            30.303ns  (clk_out1_pll rise@30.303ns - clk_out1_pll rise@0.000ns)
+  Data Path Delay:        3.430ns  (logic 0.643ns (18.747%)  route 2.787ns (81.253%))
+  Logic Levels:           2  (LUT4=1 LUT5=1)
+  Clock Path Skew:        -0.060ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.342ns = ( 31.645 - 30.303 ) 
+    Source Clock Delay      (SCD):    1.498ns
+    Clock Pessimism Removal (CPR):    0.096ns
+  Clock Uncertainty:      0.151ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.294ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_pll rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  sys_clk_IBUF_BUFG_inst/O
+                         net (fo=172, routed)         1.552     1.552    TFT_char_U1/pll/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.232    -1.680 r  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.597    -0.083    TFT_char_U1/pll/inst/clk_out1_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.085     0.002 r  TFT_char_U1/pll/inst/clkout1_buf/O
+                         net (fo=24, routed)          1.496     1.498    TFT_char_U1/tft_ctrl_inst/clk_out1
+    SLICE_X102Y70        FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_h_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X102Y70        FDCE (Prop_fdce_C_Q)         0.433     1.931 f  TFT_char_U1/tft_ctrl_inst/cnt_h_reg[0]/Q
+                         net (fo=17, routed)          1.212     3.143    TFT_char_U1/tft_ctrl_inst/cnt_h_reg_n_0_[0]
+    SLICE_X103Y71        LUT4 (Prop_lut4_I0_O)        0.105     3.248 f  TFT_char_U1/tft_ctrl_inst/cnt_h[0]_i_4/O
+                         net (fo=1, routed)           0.652     3.900    TFT_char_U1/tft_ctrl_inst/cnt_h[0]_i_4_n_0
+    SLICE_X102Y71        LUT5 (Prop_lut5_I1_O)        0.105     4.005 r  TFT_char_U1/tft_ctrl_inst/cnt_h[0]_i_2/O
+                         net (fo=13, routed)          0.922     4.928    TFT_char_U1/tft_ctrl_inst/cnt_v0
+    SLICE_X99Y70         FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_v_reg[1]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_pll rise edge)
+                                                     30.303    30.303 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000    30.303 r  sys_clk_IBUF_BUFG_inst/O
+                         net (fo=172, routed)         1.386    31.689    TFT_char_U1/pll/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.915    28.774 r  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.454    30.228    TFT_char_U1/pll/inst/clk_out1_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.077    30.305 r  TFT_char_U1/pll/inst/clkout1_buf/O
+                         net (fo=24, routed)          1.340    31.645    TFT_char_U1/tft_ctrl_inst/clk_out1
+    SLICE_X99Y70         FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_v_reg[1]/C
+                         clock pessimism              0.096    31.741    
+                         clock uncertainty           -0.151    31.590    
+    SLICE_X99Y70         FDCE (Setup_fdce_C_CE)      -0.168    31.422    TFT_char_U1/tft_ctrl_inst/cnt_v_reg[1]
+  -------------------------------------------------------------------
+                         required time                         31.422    
+                         arrival time                          -4.928    
+  -------------------------------------------------------------------
+                         slack                                 26.494    
+
+Slack (MET) :             26.494ns  (required time - arrival time)
+  Source:                 TFT_char_U1/tft_ctrl_inst/cnt_h_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_pll  {rise@0.000ns fall@15.152ns period=30.303ns})
+  Destination:            TFT_char_U1/tft_ctrl_inst/cnt_v_reg[2]/CE
+                            (rising edge-triggered cell FDCE clocked by clk_out1_pll  {rise@0.000ns fall@15.152ns period=30.303ns})
+  Path Group:             clk_out1_pll
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            30.303ns  (clk_out1_pll rise@30.303ns - clk_out1_pll rise@0.000ns)
+  Data Path Delay:        3.430ns  (logic 0.643ns (18.747%)  route 2.787ns (81.253%))
+  Logic Levels:           2  (LUT4=1 LUT5=1)
+  Clock Path Skew:        -0.060ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.342ns = ( 31.645 - 30.303 ) 
+    Source Clock Delay      (SCD):    1.498ns
+    Clock Pessimism Removal (CPR):    0.096ns
+  Clock Uncertainty:      0.151ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.294ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_pll rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  sys_clk_IBUF_BUFG_inst/O
+                         net (fo=172, routed)         1.552     1.552    TFT_char_U1/pll/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.232    -1.680 r  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.597    -0.083    TFT_char_U1/pll/inst/clk_out1_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.085     0.002 r  TFT_char_U1/pll/inst/clkout1_buf/O
+                         net (fo=24, routed)          1.496     1.498    TFT_char_U1/tft_ctrl_inst/clk_out1
+    SLICE_X102Y70        FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_h_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X102Y70        FDCE (Prop_fdce_C_Q)         0.433     1.931 f  TFT_char_U1/tft_ctrl_inst/cnt_h_reg[0]/Q
+                         net (fo=17, routed)          1.212     3.143    TFT_char_U1/tft_ctrl_inst/cnt_h_reg_n_0_[0]
+    SLICE_X103Y71        LUT4 (Prop_lut4_I0_O)        0.105     3.248 f  TFT_char_U1/tft_ctrl_inst/cnt_h[0]_i_4/O
+                         net (fo=1, routed)           0.652     3.900    TFT_char_U1/tft_ctrl_inst/cnt_h[0]_i_4_n_0
+    SLICE_X102Y71        LUT5 (Prop_lut5_I1_O)        0.105     4.005 r  TFT_char_U1/tft_ctrl_inst/cnt_h[0]_i_2/O
+                         net (fo=13, routed)          0.922     4.928    TFT_char_U1/tft_ctrl_inst/cnt_v0
+    SLICE_X99Y70         FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_v_reg[2]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_pll rise edge)
+                                                     30.303    30.303 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000    30.303 r  sys_clk_IBUF_BUFG_inst/O
+                         net (fo=172, routed)         1.386    31.689    TFT_char_U1/pll/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.915    28.774 r  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.454    30.228    TFT_char_U1/pll/inst/clk_out1_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.077    30.305 r  TFT_char_U1/pll/inst/clkout1_buf/O
+                         net (fo=24, routed)          1.340    31.645    TFT_char_U1/tft_ctrl_inst/clk_out1
+    SLICE_X99Y70         FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_v_reg[2]/C
+                         clock pessimism              0.096    31.741    
+                         clock uncertainty           -0.151    31.590    
+    SLICE_X99Y70         FDCE (Setup_fdce_C_CE)      -0.168    31.422    TFT_char_U1/tft_ctrl_inst/cnt_v_reg[2]
+  -------------------------------------------------------------------
+                         required time                         31.422    
+                         arrival time                          -4.928    
+  -------------------------------------------------------------------
+                         slack                                 26.494    
+
+Slack (MET) :             26.494ns  (required time - arrival time)
+  Source:                 TFT_char_U1/tft_ctrl_inst/cnt_h_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_pll  {rise@0.000ns fall@15.152ns period=30.303ns})
+  Destination:            TFT_char_U1/tft_ctrl_inst/cnt_v_reg[3]/CE
+                            (rising edge-triggered cell FDCE clocked by clk_out1_pll  {rise@0.000ns fall@15.152ns period=30.303ns})
+  Path Group:             clk_out1_pll
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            30.303ns  (clk_out1_pll rise@30.303ns - clk_out1_pll rise@0.000ns)
+  Data Path Delay:        3.430ns  (logic 0.643ns (18.747%)  route 2.787ns (81.253%))
+  Logic Levels:           2  (LUT4=1 LUT5=1)
+  Clock Path Skew:        -0.060ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.342ns = ( 31.645 - 30.303 ) 
+    Source Clock Delay      (SCD):    1.498ns
+    Clock Pessimism Removal (CPR):    0.096ns
+  Clock Uncertainty:      0.151ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.294ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_pll rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  sys_clk_IBUF_BUFG_inst/O
+                         net (fo=172, routed)         1.552     1.552    TFT_char_U1/pll/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.232    -1.680 r  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.597    -0.083    TFT_char_U1/pll/inst/clk_out1_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.085     0.002 r  TFT_char_U1/pll/inst/clkout1_buf/O
+                         net (fo=24, routed)          1.496     1.498    TFT_char_U1/tft_ctrl_inst/clk_out1
+    SLICE_X102Y70        FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_h_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X102Y70        FDCE (Prop_fdce_C_Q)         0.433     1.931 f  TFT_char_U1/tft_ctrl_inst/cnt_h_reg[0]/Q
+                         net (fo=17, routed)          1.212     3.143    TFT_char_U1/tft_ctrl_inst/cnt_h_reg_n_0_[0]
+    SLICE_X103Y71        LUT4 (Prop_lut4_I0_O)        0.105     3.248 f  TFT_char_U1/tft_ctrl_inst/cnt_h[0]_i_4/O
+                         net (fo=1, routed)           0.652     3.900    TFT_char_U1/tft_ctrl_inst/cnt_h[0]_i_4_n_0
+    SLICE_X102Y71        LUT5 (Prop_lut5_I1_O)        0.105     4.005 r  TFT_char_U1/tft_ctrl_inst/cnt_h[0]_i_2/O
+                         net (fo=13, routed)          0.922     4.928    TFT_char_U1/tft_ctrl_inst/cnt_v0
+    SLICE_X99Y70         FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_v_reg[3]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_pll rise edge)
+                                                     30.303    30.303 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000    30.303 r  sys_clk_IBUF_BUFG_inst/O
+                         net (fo=172, routed)         1.386    31.689    TFT_char_U1/pll/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.915    28.774 r  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.454    30.228    TFT_char_U1/pll/inst/clk_out1_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.077    30.305 r  TFT_char_U1/pll/inst/clkout1_buf/O
+                         net (fo=24, routed)          1.340    31.645    TFT_char_U1/tft_ctrl_inst/clk_out1
+    SLICE_X99Y70         FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_v_reg[3]/C
+                         clock pessimism              0.096    31.741    
+                         clock uncertainty           -0.151    31.590    
+    SLICE_X99Y70         FDCE (Setup_fdce_C_CE)      -0.168    31.422    TFT_char_U1/tft_ctrl_inst/cnt_v_reg[3]
+  -------------------------------------------------------------------
+                         required time                         31.422    
+                         arrival time                          -4.928    
+  -------------------------------------------------------------------
+                         slack                                 26.494    
+
+Slack (MET) :             26.494ns  (required time - arrival time)
+  Source:                 TFT_char_U1/tft_ctrl_inst/cnt_h_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_pll  {rise@0.000ns fall@15.152ns period=30.303ns})
+  Destination:            TFT_char_U1/tft_ctrl_inst/cnt_v_reg[4]/CE
+                            (rising edge-triggered cell FDCE clocked by clk_out1_pll  {rise@0.000ns fall@15.152ns period=30.303ns})
+  Path Group:             clk_out1_pll
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            30.303ns  (clk_out1_pll rise@30.303ns - clk_out1_pll rise@0.000ns)
+  Data Path Delay:        3.430ns  (logic 0.643ns (18.747%)  route 2.787ns (81.253%))
+  Logic Levels:           2  (LUT4=1 LUT5=1)
+  Clock Path Skew:        -0.060ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.342ns = ( 31.645 - 30.303 ) 
+    Source Clock Delay      (SCD):    1.498ns
+    Clock Pessimism Removal (CPR):    0.096ns
+  Clock Uncertainty:      0.151ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.294ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_pll rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  sys_clk_IBUF_BUFG_inst/O
+                         net (fo=172, routed)         1.552     1.552    TFT_char_U1/pll/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.232    -1.680 r  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.597    -0.083    TFT_char_U1/pll/inst/clk_out1_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.085     0.002 r  TFT_char_U1/pll/inst/clkout1_buf/O
+                         net (fo=24, routed)          1.496     1.498    TFT_char_U1/tft_ctrl_inst/clk_out1
+    SLICE_X102Y70        FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_h_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X102Y70        FDCE (Prop_fdce_C_Q)         0.433     1.931 f  TFT_char_U1/tft_ctrl_inst/cnt_h_reg[0]/Q
+                         net (fo=17, routed)          1.212     3.143    TFT_char_U1/tft_ctrl_inst/cnt_h_reg_n_0_[0]
+    SLICE_X103Y71        LUT4 (Prop_lut4_I0_O)        0.105     3.248 f  TFT_char_U1/tft_ctrl_inst/cnt_h[0]_i_4/O
+                         net (fo=1, routed)           0.652     3.900    TFT_char_U1/tft_ctrl_inst/cnt_h[0]_i_4_n_0
+    SLICE_X102Y71        LUT5 (Prop_lut5_I1_O)        0.105     4.005 r  TFT_char_U1/tft_ctrl_inst/cnt_h[0]_i_2/O
+                         net (fo=13, routed)          0.922     4.928    TFT_char_U1/tft_ctrl_inst/cnt_v0
+    SLICE_X99Y70         FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_v_reg[4]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_pll rise edge)
+                                                     30.303    30.303 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000    30.303 r  sys_clk_IBUF_BUFG_inst/O
+                         net (fo=172, routed)         1.386    31.689    TFT_char_U1/pll/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.915    28.774 r  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.454    30.228    TFT_char_U1/pll/inst/clk_out1_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.077    30.305 r  TFT_char_U1/pll/inst/clkout1_buf/O
+                         net (fo=24, routed)          1.340    31.645    TFT_char_U1/tft_ctrl_inst/clk_out1
+    SLICE_X99Y70         FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_v_reg[4]/C
+                         clock pessimism              0.096    31.741    
+                         clock uncertainty           -0.151    31.590    
+    SLICE_X99Y70         FDCE (Setup_fdce_C_CE)      -0.168    31.422    TFT_char_U1/tft_ctrl_inst/cnt_v_reg[4]
+  -------------------------------------------------------------------
+                         required time                         31.422    
+                         arrival time                          -4.928    
+  -------------------------------------------------------------------
+                         slack                                 26.494    
+
+Slack (MET) :             26.612ns  (required time - arrival time)
+  Source:                 TFT_char_U1/tft_ctrl_inst/cnt_h_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_pll  {rise@0.000ns fall@15.152ns period=30.303ns})
+  Destination:            TFT_char_U1/tft_ctrl_inst/cnt_v_reg[0]/CE
+                            (rising edge-triggered cell FDCE clocked by clk_out1_pll  {rise@0.000ns fall@15.152ns period=30.303ns})
+  Path Group:             clk_out1_pll
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            30.303ns  (clk_out1_pll rise@30.303ns - clk_out1_pll rise@0.000ns)
+  Data Path Delay:        3.310ns  (logic 0.643ns (19.427%)  route 2.667ns (80.573%))
+  Logic Levels:           2  (LUT4=1 LUT5=1)
+  Clock Path Skew:        -0.062ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.340ns = ( 31.643 - 30.303 ) 
+    Source Clock Delay      (SCD):    1.498ns
+    Clock Pessimism Removal (CPR):    0.096ns
+  Clock Uncertainty:      0.151ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.294ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_pll rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  sys_clk_IBUF_BUFG_inst/O
+                         net (fo=172, routed)         1.552     1.552    TFT_char_U1/pll/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.232    -1.680 r  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.597    -0.083    TFT_char_U1/pll/inst/clk_out1_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.085     0.002 r  TFT_char_U1/pll/inst/clkout1_buf/O
+                         net (fo=24, routed)          1.496     1.498    TFT_char_U1/tft_ctrl_inst/clk_out1
+    SLICE_X102Y70        FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_h_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X102Y70        FDCE (Prop_fdce_C_Q)         0.433     1.931 f  TFT_char_U1/tft_ctrl_inst/cnt_h_reg[0]/Q
+                         net (fo=17, routed)          1.212     3.143    TFT_char_U1/tft_ctrl_inst/cnt_h_reg_n_0_[0]
+    SLICE_X103Y71        LUT4 (Prop_lut4_I0_O)        0.105     3.248 f  TFT_char_U1/tft_ctrl_inst/cnt_h[0]_i_4/O
+                         net (fo=1, routed)           0.652     3.900    TFT_char_U1/tft_ctrl_inst/cnt_h[0]_i_4_n_0
+    SLICE_X102Y71        LUT5 (Prop_lut5_I1_O)        0.105     4.005 r  TFT_char_U1/tft_ctrl_inst/cnt_h[0]_i_2/O
+                         net (fo=13, routed)          0.802     4.808    TFT_char_U1/tft_ctrl_inst/cnt_v0
+    SLICE_X99Y72         FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_v_reg[0]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_pll rise edge)
+                                                     30.303    30.303 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000    30.303 r  sys_clk_IBUF_BUFG_inst/O
+                         net (fo=172, routed)         1.386    31.689    TFT_char_U1/pll/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.915    28.774 r  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.454    30.228    TFT_char_U1/pll/inst/clk_out1_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.077    30.305 r  TFT_char_U1/pll/inst/clkout1_buf/O
+                         net (fo=24, routed)          1.338    31.643    TFT_char_U1/tft_ctrl_inst/clk_out1
+    SLICE_X99Y72         FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_v_reg[0]/C
+                         clock pessimism              0.096    31.739    
+                         clock uncertainty           -0.151    31.588    
+    SLICE_X99Y72         FDCE (Setup_fdce_C_CE)      -0.168    31.420    TFT_char_U1/tft_ctrl_inst/cnt_v_reg[0]
+  -------------------------------------------------------------------
+                         required time                         31.420    
+                         arrival time                          -4.808    
+  -------------------------------------------------------------------
+                         slack                                 26.612    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.225ns  (arrival time - required time)
+  Source:                 TFT_char_U1/tft_ctrl_inst/cnt_v_reg[7]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_pll  {rise@0.000ns fall@15.152ns period=30.303ns})
+  Destination:            TFT_char_U1/tft_ctrl_inst/cnt_v_reg[10]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_pll  {rise@0.000ns fall@15.152ns period=30.303ns})
+  Path Group:             clk_out1_pll
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_pll rise@0.000ns - clk_out1_pll rise@0.000ns)
+  Data Path Delay:        0.330ns  (logic 0.186ns (56.388%)  route 0.144ns (43.612%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.869ns
+    Source Clock Delay      (SCD):    0.602ns
+    Clock Pessimism Removal (CPR):    0.254ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_pll rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  sys_clk_IBUF_BUFG_inst/O
+                         net (fo=172, routed)         0.597     0.597    TFT_char_U1/pll/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.150    -0.553 r  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.529    -0.024    TFT_char_U1/pll/inst/clk_out1_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.002 r  TFT_char_U1/pll/inst/clkout1_buf/O
+                         net (fo=24, routed)          0.600     0.602    TFT_char_U1/tft_ctrl_inst/clk_out1
+    SLICE_X99Y71         FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_v_reg[7]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X99Y71         FDCE (Prop_fdce_C_Q)         0.141     0.743 r  TFT_char_U1/tft_ctrl_inst/cnt_v_reg[7]/Q
+                         net (fo=7, routed)           0.144     0.887    TFT_char_U1/tft_ctrl_inst/cnt_v_reg[7]
+    SLICE_X99Y72         LUT6 (Prop_lut6_I3_O)        0.045     0.932 r  TFT_char_U1/tft_ctrl_inst/cnt_v[10]_i_2/O
+                         net (fo=1, routed)           0.000     0.932    TFT_char_U1/tft_ctrl_inst/p_0_in__0[10]
+    SLICE_X99Y72         FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_v_reg[10]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_pll rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  sys_clk_IBUF_BUFG_inst/O
+                         net (fo=172, routed)         0.864     0.864    TFT_char_U1/pll/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.467    -0.603 r  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.576    -0.027    TFT_char_U1/pll/inst/clk_out1_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.002 r  TFT_char_U1/pll/inst/clkout1_buf/O
+                         net (fo=24, routed)          0.867     0.869    TFT_char_U1/tft_ctrl_inst/clk_out1
+    SLICE_X99Y72         FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_v_reg[10]/C
+                         clock pessimism             -0.254     0.615    
+    SLICE_X99Y72         FDCE (Hold_fdce_C_D)         0.092     0.707    TFT_char_U1/tft_ctrl_inst/cnt_v_reg[10]
+  -------------------------------------------------------------------
+                         required time                         -0.707    
+                         arrival time                           0.932    
+  -------------------------------------------------------------------
+                         slack                                  0.225    
+
+Slack (MET) :             0.234ns  (arrival time - required time)
+  Source:                 TFT_char_U1/tft_ctrl_inst/cnt_h_reg[4]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_pll  {rise@0.000ns fall@15.152ns period=30.303ns})
+  Destination:            TFT_char_U1/tft_ctrl_inst/cnt_h_reg[5]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_pll  {rise@0.000ns fall@15.152ns period=30.303ns})
+  Path Group:             clk_out1_pll
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_pll rise@0.000ns - clk_out1_pll rise@0.000ns)
+  Data Path Delay:        0.368ns  (logic 0.186ns (50.486%)  route 0.182ns (49.514%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.870ns
+    Source Clock Delay      (SCD):    0.602ns
+    Clock Pessimism Removal (CPR):    0.255ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_pll rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  sys_clk_IBUF_BUFG_inst/O
+                         net (fo=172, routed)         0.597     0.597    TFT_char_U1/pll/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.150    -0.553 r  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.529    -0.024    TFT_char_U1/pll/inst/clk_out1_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.002 r  TFT_char_U1/pll/inst/clkout1_buf/O
+                         net (fo=24, routed)          0.600     0.602    TFT_char_U1/tft_ctrl_inst/clk_out1
+    SLICE_X103Y71        FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_h_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X103Y71        FDCE (Prop_fdce_C_Q)         0.141     0.743 r  TFT_char_U1/tft_ctrl_inst/cnt_h_reg[4]/Q
+                         net (fo=19, routed)          0.182     0.925    TFT_char_U1/tft_ctrl_inst/cnt_h_reg_n_0_[4]
+    SLICE_X102Y71        LUT6 (Prop_lut6_I5_O)        0.045     0.970 r  TFT_char_U1/tft_ctrl_inst/cnt_h[5]_i_1/O
+                         net (fo=1, routed)           0.000     0.970    TFT_char_U1/tft_ctrl_inst/cnt_h[5]
+    SLICE_X102Y71        FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_h_reg[5]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_pll rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  sys_clk_IBUF_BUFG_inst/O
+                         net (fo=172, routed)         0.864     0.864    TFT_char_U1/pll/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.467    -0.603 r  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.576    -0.027    TFT_char_U1/pll/inst/clk_out1_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.002 r  TFT_char_U1/pll/inst/clkout1_buf/O
+                         net (fo=24, routed)          0.868     0.870    TFT_char_U1/tft_ctrl_inst/clk_out1
+    SLICE_X102Y71        FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_h_reg[5]/C
+                         clock pessimism             -0.255     0.615    
+    SLICE_X102Y71        FDCE (Hold_fdce_C_D)         0.121     0.736    TFT_char_U1/tft_ctrl_inst/cnt_h_reg[5]
+  -------------------------------------------------------------------
+                         required time                         -0.736    
+                         arrival time                           0.970    
+  -------------------------------------------------------------------
+                         slack                                  0.234    
+
+Slack (MET) :             0.257ns  (arrival time - required time)
+  Source:                 TFT_char_U1/tft_ctrl_inst/cnt_v_reg[6]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_pll  {rise@0.000ns fall@15.152ns period=30.303ns})
+  Destination:            TFT_char_U1/tft_ctrl_inst/cnt_v_reg[7]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_pll  {rise@0.000ns fall@15.152ns period=30.303ns})
+  Path Group:             clk_out1_pll
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_pll rise@0.000ns - clk_out1_pll rise@0.000ns)
+  Data Path Delay:        0.363ns  (logic 0.186ns (51.205%)  route 0.177ns (48.795%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.014ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.870ns
+    Source Clock Delay      (SCD):    0.602ns
+    Clock Pessimism Removal (CPR):    0.254ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_pll rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  sys_clk_IBUF_BUFG_inst/O
+                         net (fo=172, routed)         0.597     0.597    TFT_char_U1/pll/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.150    -0.553 r  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.529    -0.024    TFT_char_U1/pll/inst/clk_out1_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.002 r  TFT_char_U1/pll/inst/clkout1_buf/O
+                         net (fo=24, routed)          0.600     0.602    TFT_char_U1/tft_ctrl_inst/clk_out1
+    SLICE_X99Y72         FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_v_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X99Y72         FDCE (Prop_fdce_C_Q)         0.141     0.743 r  TFT_char_U1/tft_ctrl_inst/cnt_v_reg[6]/Q
+                         net (fo=8, routed)           0.177     0.920    TFT_char_U1/tft_ctrl_inst/cnt_v_reg[6]
+    SLICE_X99Y71         LUT6 (Prop_lut6_I1_O)        0.045     0.965 r  TFT_char_U1/tft_ctrl_inst/cnt_v[7]_i_1/O
+                         net (fo=1, routed)           0.000     0.965    TFT_char_U1/tft_ctrl_inst/cnt_v[7]_i_1_n_0
+    SLICE_X99Y71         FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_v_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_pll rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  sys_clk_IBUF_BUFG_inst/O
+                         net (fo=172, routed)         0.864     0.864    TFT_char_U1/pll/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.467    -0.603 r  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.576    -0.027    TFT_char_U1/pll/inst/clk_out1_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.002 r  TFT_char_U1/pll/inst/clkout1_buf/O
+                         net (fo=24, routed)          0.868     0.870    TFT_char_U1/tft_ctrl_inst/clk_out1
+    SLICE_X99Y71         FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_v_reg[7]/C
+                         clock pessimism             -0.254     0.616    
+    SLICE_X99Y71         FDCE (Hold_fdce_C_D)         0.092     0.708    TFT_char_U1/tft_ctrl_inst/cnt_v_reg[7]
+  -------------------------------------------------------------------
+                         required time                         -0.708    
+                         arrival time                           0.965    
+  -------------------------------------------------------------------
+                         slack                                  0.257    
+
+Slack (MET) :             0.258ns  (arrival time - required time)
+  Source:                 TFT_char_U1/tft_ctrl_inst/cnt_v_reg[8]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_pll  {rise@0.000ns fall@15.152ns period=30.303ns})
+  Destination:            TFT_char_U1/tft_ctrl_inst/cnt_v_reg[9]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_pll  {rise@0.000ns fall@15.152ns period=30.303ns})
+  Path Group:             clk_out1_pll
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_pll rise@0.000ns - clk_out1_pll rise@0.000ns)
+  Data Path Delay:        0.363ns  (logic 0.186ns (51.205%)  route 0.177ns (48.795%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.869ns
+    Source Clock Delay      (SCD):    0.602ns
+    Clock Pessimism Removal (CPR):    0.254ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_pll rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  sys_clk_IBUF_BUFG_inst/O
+                         net (fo=172, routed)         0.597     0.597    TFT_char_U1/pll/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.150    -0.553 r  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.529    -0.024    TFT_char_U1/pll/inst/clk_out1_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.002 r  TFT_char_U1/pll/inst/clkout1_buf/O
+                         net (fo=24, routed)          0.600     0.602    TFT_char_U1/tft_ctrl_inst/clk_out1
+    SLICE_X99Y71         FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_v_reg[8]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X99Y71         FDCE (Prop_fdce_C_Q)         0.141     0.743 r  TFT_char_U1/tft_ctrl_inst/cnt_v_reg[8]/Q
+                         net (fo=6, routed)           0.177     0.920    TFT_char_U1/tft_ctrl_inst/cnt_v_reg[8]
+    SLICE_X99Y72         LUT6 (Prop_lut6_I5_O)        0.045     0.965 r  TFT_char_U1/tft_ctrl_inst/cnt_v[9]_i_1/O
+                         net (fo=1, routed)           0.000     0.965    TFT_char_U1/tft_ctrl_inst/p_0_in__0[9]
+    SLICE_X99Y72         FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_v_reg[9]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_pll rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  sys_clk_IBUF_BUFG_inst/O
+                         net (fo=172, routed)         0.864     0.864    TFT_char_U1/pll/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.467    -0.603 r  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.576    -0.027    TFT_char_U1/pll/inst/clk_out1_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.002 r  TFT_char_U1/pll/inst/clkout1_buf/O
+                         net (fo=24, routed)          0.867     0.869    TFT_char_U1/tft_ctrl_inst/clk_out1
+    SLICE_X99Y72         FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_v_reg[9]/C
+                         clock pessimism             -0.254     0.615    
+    SLICE_X99Y72         FDCE (Hold_fdce_C_D)         0.092     0.707    TFT_char_U1/tft_ctrl_inst/cnt_v_reg[9]
+  -------------------------------------------------------------------
+                         required time                         -0.707    
+                         arrival time                           0.965    
+  -------------------------------------------------------------------
+                         slack                                  0.258    
+
+Slack (MET) :             0.264ns  (arrival time - required time)
+  Source:                 TFT_char_U1/tft_ctrl_inst/cnt_h_reg[9]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_pll  {rise@0.000ns fall@15.152ns period=30.303ns})
+  Destination:            TFT_char_U1/tft_ctrl_inst/cnt_h_reg[10]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_pll  {rise@0.000ns fall@15.152ns period=30.303ns})
+  Path Group:             clk_out1_pll
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_pll rise@0.000ns - clk_out1_pll rise@0.000ns)
+  Data Path Delay:        0.396ns  (logic 0.186ns (47.009%)  route 0.210ns (52.991%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.012ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.870ns
+    Source Clock Delay      (SCD):    0.604ns
+    Clock Pessimism Removal (CPR):    0.254ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_pll rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  sys_clk_IBUF_BUFG_inst/O
+                         net (fo=172, routed)         0.597     0.597    TFT_char_U1/pll/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.150    -0.553 r  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.529    -0.024    TFT_char_U1/pll/inst/clk_out1_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.002 r  TFT_char_U1/pll/inst/clkout1_buf/O
+                         net (fo=24, routed)          0.602     0.604    TFT_char_U1/tft_ctrl_inst/clk_out1
+    SLICE_X103Y69        FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_h_reg[9]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X103Y69        FDCE (Prop_fdce_C_Q)         0.141     0.745 r  TFT_char_U1/tft_ctrl_inst/cnt_h_reg[9]/Q
+                         net (fo=13, routed)          0.210     0.954    TFT_char_U1/tft_ctrl_inst/cnt_h_reg_n_0_[9]
+    SLICE_X102Y71        LUT5 (Prop_lut5_I2_O)        0.045     0.999 r  TFT_char_U1/tft_ctrl_inst/cnt_h[10]_i_1/O
+                         net (fo=1, routed)           0.000     0.999    TFT_char_U1/tft_ctrl_inst/cnt_h[10]
+    SLICE_X102Y71        FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_h_reg[10]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_pll rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  sys_clk_IBUF_BUFG_inst/O
+                         net (fo=172, routed)         0.864     0.864    TFT_char_U1/pll/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.467    -0.603 r  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.576    -0.027    TFT_char_U1/pll/inst/clk_out1_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.002 r  TFT_char_U1/pll/inst/clkout1_buf/O
+                         net (fo=24, routed)          0.868     0.870    TFT_char_U1/tft_ctrl_inst/clk_out1
+    SLICE_X102Y71        FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_h_reg[10]/C
+                         clock pessimism             -0.254     0.616    
+    SLICE_X102Y71        FDCE (Hold_fdce_C_D)         0.120     0.736    TFT_char_U1/tft_ctrl_inst/cnt_h_reg[10]
+  -------------------------------------------------------------------
+                         required time                         -0.736    
+                         arrival time                           0.999    
+  -------------------------------------------------------------------
+                         slack                                  0.264    
+
+Slack (MET) :             0.266ns  (arrival time - required time)
+  Source:                 TFT_char_U1/tft_ctrl_inst/cnt_h_reg[5]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_pll  {rise@0.000ns fall@15.152ns period=30.303ns})
+  Destination:            TFT_char_U1/tft_ctrl_inst/cnt_h_reg[7]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_pll  {rise@0.000ns fall@15.152ns period=30.303ns})
+  Path Group:             clk_out1_pll
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_pll rise@0.000ns - clk_out1_pll rise@0.000ns)
+  Data Path Delay:        0.410ns  (logic 0.212ns (51.650%)  route 0.198ns (48.350%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.869ns
+    Source Clock Delay      (SCD):    0.602ns
+    Clock Pessimism Removal (CPR):    0.254ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_pll rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  sys_clk_IBUF_BUFG_inst/O
+                         net (fo=172, routed)         0.597     0.597    TFT_char_U1/pll/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.150    -0.553 r  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.529    -0.024    TFT_char_U1/pll/inst/clk_out1_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.002 r  TFT_char_U1/pll/inst/clkout1_buf/O
+                         net (fo=24, routed)          0.600     0.602    TFT_char_U1/tft_ctrl_inst/clk_out1
+    SLICE_X102Y71        FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_h_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X102Y71        FDCE (Prop_fdce_C_Q)         0.164     0.766 r  TFT_char_U1/tft_ctrl_inst/cnt_h_reg[5]/Q
+                         net (fo=16, routed)          0.198     0.964    TFT_char_U1/tft_ctrl_inst/cnt_h_reg_n_0_[5]
+    SLICE_X102Y72        LUT5 (Prop_lut5_I4_O)        0.048     1.012 r  TFT_char_U1/tft_ctrl_inst/cnt_h[7]_i_1/O
+                         net (fo=1, routed)           0.000     1.012    TFT_char_U1/tft_ctrl_inst/cnt_h[7]_i_1_n_0
+    SLICE_X102Y72        FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_h_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_pll rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  sys_clk_IBUF_BUFG_inst/O
+                         net (fo=172, routed)         0.864     0.864    TFT_char_U1/pll/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.467    -0.603 r  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.576    -0.027    TFT_char_U1/pll/inst/clk_out1_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.002 r  TFT_char_U1/pll/inst/clkout1_buf/O
+                         net (fo=24, routed)          0.867     0.869    TFT_char_U1/tft_ctrl_inst/clk_out1
+    SLICE_X102Y72        FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_h_reg[7]/C
+                         clock pessimism             -0.254     0.615    
+    SLICE_X102Y72        FDCE (Hold_fdce_C_D)         0.131     0.746    TFT_char_U1/tft_ctrl_inst/cnt_h_reg[7]
+  -------------------------------------------------------------------
+                         required time                         -0.746    
+                         arrival time                           1.012    
+  -------------------------------------------------------------------
+                         slack                                  0.266    
+
+Slack (MET) :             0.273ns  (arrival time - required time)
+  Source:                 TFT_char_U1/tft_ctrl_inst/cnt_h_reg[9]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_pll  {rise@0.000ns fall@15.152ns period=30.303ns})
+  Destination:            TFT_char_U1/tft_ctrl_inst/cnt_h_reg[9]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_pll  {rise@0.000ns fall@15.152ns period=30.303ns})
+  Path Group:             clk_out1_pll
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_pll rise@0.000ns - clk_out1_pll rise@0.000ns)
+  Data Path Delay:        0.364ns  (logic 0.186ns (51.161%)  route 0.178ns (48.839%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.872ns
+    Source Clock Delay      (SCD):    0.604ns
+    Clock Pessimism Removal (CPR):    0.268ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_pll rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  sys_clk_IBUF_BUFG_inst/O
+                         net (fo=172, routed)         0.597     0.597    TFT_char_U1/pll/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.150    -0.553 r  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.529    -0.024    TFT_char_U1/pll/inst/clk_out1_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.002 r  TFT_char_U1/pll/inst/clkout1_buf/O
+                         net (fo=24, routed)          0.602     0.604    TFT_char_U1/tft_ctrl_inst/clk_out1
+    SLICE_X103Y69        FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_h_reg[9]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X103Y69        FDCE (Prop_fdce_C_Q)         0.141     0.745 r  TFT_char_U1/tft_ctrl_inst/cnt_h_reg[9]/Q
+                         net (fo=13, routed)          0.178     0.922    TFT_char_U1/tft_ctrl_inst/cnt_h_reg_n_0_[9]
+    SLICE_X103Y69        LUT5 (Prop_lut5_I0_O)        0.045     0.967 r  TFT_char_U1/tft_ctrl_inst/cnt_h[9]_i_1/O
+                         net (fo=1, routed)           0.000     0.967    TFT_char_U1/tft_ctrl_inst/cnt_h[9]
+    SLICE_X103Y69        FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_h_reg[9]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_pll rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  sys_clk_IBUF_BUFG_inst/O
+                         net (fo=172, routed)         0.864     0.864    TFT_char_U1/pll/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.467    -0.603 r  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.576    -0.027    TFT_char_U1/pll/inst/clk_out1_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.002 r  TFT_char_U1/pll/inst/clkout1_buf/O
+                         net (fo=24, routed)          0.870     0.872    TFT_char_U1/tft_ctrl_inst/clk_out1
+    SLICE_X103Y69        FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_h_reg[9]/C
+                         clock pessimism             -0.268     0.604    
+    SLICE_X103Y69        FDCE (Hold_fdce_C_D)         0.091     0.695    TFT_char_U1/tft_ctrl_inst/cnt_h_reg[9]
+  -------------------------------------------------------------------
+                         required time                         -0.695    
+                         arrival time                           0.967    
+  -------------------------------------------------------------------
+                         slack                                  0.273    
+
+Slack (MET) :             0.273ns  (arrival time - required time)
+  Source:                 TFT_char_U1/tft_ctrl_inst/cnt_h_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_pll  {rise@0.000ns fall@15.152ns period=30.303ns})
+  Destination:            TFT_char_U1/tft_ctrl_inst/cnt_h_reg[1]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_pll  {rise@0.000ns fall@15.152ns period=30.303ns})
+  Path Group:             clk_out1_pll
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_pll rise@0.000ns - clk_out1_pll rise@0.000ns)
+  Data Path Delay:        0.404ns  (logic 0.207ns (51.202%)  route 0.197ns (48.798%))
+  Logic Levels:           1  (LUT2=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.871ns
+    Source Clock Delay      (SCD):    0.603ns
+    Clock Pessimism Removal (CPR):    0.268ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_pll rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  sys_clk_IBUF_BUFG_inst/O
+                         net (fo=172, routed)         0.597     0.597    TFT_char_U1/pll/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.150    -0.553 r  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.529    -0.024    TFT_char_U1/pll/inst/clk_out1_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.002 r  TFT_char_U1/pll/inst/clkout1_buf/O
+                         net (fo=24, routed)          0.601     0.603    TFT_char_U1/tft_ctrl_inst/clk_out1
+    SLICE_X102Y70        FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_h_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X102Y70        FDCE (Prop_fdce_C_Q)         0.164     0.767 r  TFT_char_U1/tft_ctrl_inst/cnt_h_reg[0]/Q
+                         net (fo=17, routed)          0.197     0.964    TFT_char_U1/tft_ctrl_inst/cnt_h_reg_n_0_[0]
+    SLICE_X102Y70        LUT2 (Prop_lut2_I1_O)        0.043     1.007 r  TFT_char_U1/tft_ctrl_inst/cnt_h[1]_i_1/O
+                         net (fo=1, routed)           0.000     1.007    TFT_char_U1/tft_ctrl_inst/cnt_h[1]
+    SLICE_X102Y70        FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_h_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_pll rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  sys_clk_IBUF_BUFG_inst/O
+                         net (fo=172, routed)         0.864     0.864    TFT_char_U1/pll/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.467    -0.603 r  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.576    -0.027    TFT_char_U1/pll/inst/clk_out1_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.002 r  TFT_char_U1/pll/inst/clkout1_buf/O
+                         net (fo=24, routed)          0.869     0.871    TFT_char_U1/tft_ctrl_inst/clk_out1
+    SLICE_X102Y70        FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_h_reg[1]/C
+                         clock pessimism             -0.268     0.603    
+    SLICE_X102Y70        FDCE (Hold_fdce_C_D)         0.131     0.734    TFT_char_U1/tft_ctrl_inst/cnt_h_reg[1]
+  -------------------------------------------------------------------
+                         required time                         -0.734    
+                         arrival time                           1.007    
+  -------------------------------------------------------------------
+                         slack                                  0.273    
+
+Slack (MET) :             0.274ns  (arrival time - required time)
+  Source:                 TFT_char_U1/tft_ctrl_inst/cnt_h_reg[5]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_pll  {rise@0.000ns fall@15.152ns period=30.303ns})
+  Destination:            TFT_char_U1/tft_ctrl_inst/cnt_h_reg[6]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_pll  {rise@0.000ns fall@15.152ns period=30.303ns})
+  Path Group:             clk_out1_pll
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_pll rise@0.000ns - clk_out1_pll rise@0.000ns)
+  Data Path Delay:        0.407ns  (logic 0.209ns (51.294%)  route 0.198ns (48.706%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.869ns
+    Source Clock Delay      (SCD):    0.602ns
+    Clock Pessimism Removal (CPR):    0.254ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_pll rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  sys_clk_IBUF_BUFG_inst/O
+                         net (fo=172, routed)         0.597     0.597    TFT_char_U1/pll/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.150    -0.553 r  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.529    -0.024    TFT_char_U1/pll/inst/clk_out1_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.002 r  TFT_char_U1/pll/inst/clkout1_buf/O
+                         net (fo=24, routed)          0.600     0.602    TFT_char_U1/tft_ctrl_inst/clk_out1
+    SLICE_X102Y71        FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_h_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X102Y71        FDCE (Prop_fdce_C_Q)         0.164     0.766 r  TFT_char_U1/tft_ctrl_inst/cnt_h_reg[5]/Q
+                         net (fo=16, routed)          0.198     0.964    TFT_char_U1/tft_ctrl_inst/cnt_h_reg_n_0_[5]
+    SLICE_X102Y72        LUT4 (Prop_lut4_I1_O)        0.045     1.009 r  TFT_char_U1/tft_ctrl_inst/cnt_h[6]_i_1/O
+                         net (fo=1, routed)           0.000     1.009    TFT_char_U1/tft_ctrl_inst/cnt_h[6]_i_1_n_0
+    SLICE_X102Y72        FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_h_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_pll rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  sys_clk_IBUF_BUFG_inst/O
+                         net (fo=172, routed)         0.864     0.864    TFT_char_U1/pll/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.467    -0.603 r  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.576    -0.027    TFT_char_U1/pll/inst/clk_out1_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.002 r  TFT_char_U1/pll/inst/clkout1_buf/O
+                         net (fo=24, routed)          0.867     0.869    TFT_char_U1/tft_ctrl_inst/clk_out1
+    SLICE_X102Y72        FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_h_reg[6]/C
+                         clock pessimism             -0.254     0.615    
+    SLICE_X102Y72        FDCE (Hold_fdce_C_D)         0.120     0.735    TFT_char_U1/tft_ctrl_inst/cnt_h_reg[6]
+  -------------------------------------------------------------------
+                         required time                         -0.735    
+                         arrival time                           1.009    
+  -------------------------------------------------------------------
+                         slack                                  0.274    
+
+Slack (MET) :             0.281ns  (arrival time - required time)
+  Source:                 TFT_char_U1/tft_ctrl_inst/cnt_v_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_pll  {rise@0.000ns fall@15.152ns period=30.303ns})
+  Destination:            TFT_char_U1/tft_ctrl_inst/cnt_v_reg[6]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_pll  {rise@0.000ns fall@15.152ns period=30.303ns})
+  Path Group:             clk_out1_pll
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_pll rise@0.000ns - clk_out1_pll rise@0.000ns)
+  Data Path Delay:        0.372ns  (logic 0.227ns (61.080%)  route 0.145ns (38.920%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.869ns
+    Source Clock Delay      (SCD):    0.602ns
+    Clock Pessimism Removal (CPR):    0.267ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_pll rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  sys_clk_IBUF_BUFG_inst/O
+                         net (fo=172, routed)         0.597     0.597    TFT_char_U1/pll/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.150    -0.553 r  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.529    -0.024    TFT_char_U1/pll/inst/clk_out1_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.002 r  TFT_char_U1/pll/inst/clkout1_buf/O
+                         net (fo=24, routed)          0.600     0.602    TFT_char_U1/tft_ctrl_inst/clk_out1
+    SLICE_X99Y72         FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_v_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X99Y72         FDCE (Prop_fdce_C_Q)         0.128     0.730 r  TFT_char_U1/tft_ctrl_inst/cnt_v_reg[0]/Q
+                         net (fo=35, routed)          0.145     0.874    TFT_char_U1/tft_ctrl_inst/cnt_v_reg[0]
+    SLICE_X99Y72         LUT6 (Prop_lut6_I4_O)        0.099     0.973 r  TFT_char_U1/tft_ctrl_inst/cnt_v[6]_i_1/O
+                         net (fo=1, routed)           0.000     0.973    TFT_char_U1/tft_ctrl_inst/cnt_v[6]_i_1_n_0
+    SLICE_X99Y72         FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_v_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_pll rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  sys_clk_IBUF_BUFG_inst/O
+                         net (fo=172, routed)         0.864     0.864    TFT_char_U1/pll/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.467    -0.603 r  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.576    -0.027    TFT_char_U1/pll/inst/clk_out1_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.002 r  TFT_char_U1/pll/inst/clkout1_buf/O
+                         net (fo=24, routed)          0.867     0.869    TFT_char_U1/tft_ctrl_inst/clk_out1
+    SLICE_X99Y72         FDCE                                         r  TFT_char_U1/tft_ctrl_inst/cnt_v_reg[6]/C
+                         clock pessimism             -0.267     0.602    
+    SLICE_X99Y72         FDCE (Hold_fdce_C_D)         0.091     0.693    TFT_char_U1/tft_ctrl_inst/cnt_v_reg[6]
+  -------------------------------------------------------------------
+                         required time                         -0.693    
+                         arrival time                           0.973    
+  -------------------------------------------------------------------
+                         slack                                  0.281    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_out1_pll
+Waveform(ns):       { 0.000 15.152 }
+Period(ns):         30.303
+Sources:            { TFT_char_U1/pll/inst/mmcm_adv_inst/CLKOUT0 }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period        n/a     BUFG/I              n/a            1.592         30.303      28.711     BUFGCTRL_X0Y0    TFT_char_U1/pll/inst/clkout1_buf/I
+Min Period        n/a     MMCME2_ADV/CLKOUT0  n/a            1.249         30.303      29.054     MMCME2_ADV_X1Y0  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKOUT0
+Min Period        n/a     FDCE/C              n/a            1.000         30.303      29.303     SLICE_X102Y70    TFT_char_U1/tft_ctrl_inst/cnt_h_reg[0]/C
+Min Period        n/a     FDCE/C              n/a            1.000         30.303      29.303     SLICE_X102Y71    TFT_char_U1/tft_ctrl_inst/cnt_h_reg[10]/C
+Min Period        n/a     FDCE/C              n/a            1.000         30.303      29.303     SLICE_X102Y70    TFT_char_U1/tft_ctrl_inst/cnt_h_reg[1]/C
+Min Period        n/a     FDCE/C              n/a            1.000         30.303      29.303     SLICE_X100Y71    TFT_char_U1/tft_ctrl_inst/cnt_h_reg[2]/C
+Min Period        n/a     FDCE/C              n/a            1.000         30.303      29.303     SLICE_X103Y71    TFT_char_U1/tft_ctrl_inst/cnt_h_reg[3]/C
+Min Period        n/a     FDCE/C              n/a            1.000         30.303      29.303     SLICE_X103Y71    TFT_char_U1/tft_ctrl_inst/cnt_h_reg[4]/C
+Min Period        n/a     FDCE/C              n/a            1.000         30.303      29.303     SLICE_X102Y71    TFT_char_U1/tft_ctrl_inst/cnt_h_reg[5]/C
+Min Period        n/a     FDCE/C              n/a            1.000         30.303      29.303     SLICE_X102Y72    TFT_char_U1/tft_ctrl_inst/cnt_h_reg[6]/C
+Max Period        n/a     MMCME2_ADV/CLKOUT0  n/a            213.360       30.303      183.057    MMCME2_ADV_X1Y0  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKOUT0
+Low Pulse Width   Fast    FDCE/C              n/a            0.500         15.152      14.652     SLICE_X102Y71    TFT_char_U1/tft_ctrl_inst/cnt_h_reg[10]/C
+Low Pulse Width   Fast    FDCE/C              n/a            0.500         15.152      14.652     SLICE_X100Y71    TFT_char_U1/tft_ctrl_inst/cnt_h_reg[2]/C
+Low Pulse Width   Fast    FDCE/C              n/a            0.500         15.152      14.652     SLICE_X103Y71    TFT_char_U1/tft_ctrl_inst/cnt_h_reg[3]/C
+Low Pulse Width   Fast    FDCE/C              n/a            0.500         15.152      14.652     SLICE_X103Y71    TFT_char_U1/tft_ctrl_inst/cnt_h_reg[4]/C
+Low Pulse Width   Fast    FDCE/C              n/a            0.500         15.152      14.652     SLICE_X102Y71    TFT_char_U1/tft_ctrl_inst/cnt_h_reg[5]/C
+Low Pulse Width   Fast    FDCE/C              n/a            0.500         15.152      14.652     SLICE_X99Y71     TFT_char_U1/tft_ctrl_inst/cnt_v_reg[5]/C
+Low Pulse Width   Fast    FDCE/C              n/a            0.500         15.152      14.652     SLICE_X99Y71     TFT_char_U1/tft_ctrl_inst/cnt_v_reg[7]/C
+Low Pulse Width   Fast    FDCE/C              n/a            0.500         15.152      14.652     SLICE_X99Y71     TFT_char_U1/tft_ctrl_inst/cnt_v_reg[8]/C
+Low Pulse Width   Fast    FDCE/C              n/a            0.500         15.152      14.652     SLICE_X102Y72    TFT_char_U1/tft_ctrl_inst/cnt_h_reg[6]/C
+Low Pulse Width   Fast    FDCE/C              n/a            0.500         15.152      14.652     SLICE_X102Y72    TFT_char_U1/tft_ctrl_inst/cnt_h_reg[7]/C
+High Pulse Width  Fast    FDCE/C              n/a            0.500         15.152      14.652     SLICE_X102Y70    TFT_char_U1/tft_ctrl_inst/cnt_h_reg[0]/C
+High Pulse Width  Fast    FDCE/C              n/a            0.500         15.152      14.652     SLICE_X102Y70    TFT_char_U1/tft_ctrl_inst/cnt_h_reg[1]/C
+High Pulse Width  Fast    FDCE/C              n/a            0.500         15.152      14.652     SLICE_X102Y70    TFT_char_U1/tft_ctrl_inst/cnt_h_reg[8]/C
+High Pulse Width  Fast    FDCE/C              n/a            0.500         15.152      14.652     SLICE_X103Y69    TFT_char_U1/tft_ctrl_inst/cnt_h_reg[9]/C
+High Pulse Width  Fast    FDCE/C              n/a            0.500         15.152      14.652     SLICE_X99Y70     TFT_char_U1/tft_ctrl_inst/cnt_v_reg[1]/C
+High Pulse Width  Fast    FDCE/C              n/a            0.500         15.152      14.652     SLICE_X99Y70     TFT_char_U1/tft_ctrl_inst/cnt_v_reg[2]/C
+High Pulse Width  Fast    FDCE/C              n/a            0.500         15.152      14.652     SLICE_X99Y70     TFT_char_U1/tft_ctrl_inst/cnt_v_reg[3]/C
+High Pulse Width  Fast    FDCE/C              n/a            0.500         15.152      14.652     SLICE_X99Y70     TFT_char_U1/tft_ctrl_inst/cnt_v_reg[4]/C
+High Pulse Width  Fast    FDCE/C              n/a            0.500         15.152      14.652     SLICE_X101Y68    TFT_char_U1/tft_pic_inst/pix_data_reg[15]/C
+High Pulse Width  Slow    FDCE/C              n/a            0.500         15.152      14.652     SLICE_X102Y70    TFT_char_U1/tft_ctrl_inst/cnt_h_reg[0]/C
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clkfbout_pll
+  To Clock:  clkfbout_pll
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack       48.408ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clkfbout_pll
+Waveform(ns):       { 0.000 25.000 }
+Period(ns):         50.000
+Sources:            { TFT_char_U1/pll/inst/mmcm_adv_inst/CLKFBOUT }
+
+Check Type  Corner  Lib Pin              Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period  n/a     BUFG/I               n/a            1.592         50.000      48.408     BUFGCTRL_X0Y1    TFT_char_U1/pll/inst/clkf_buf/I
+Min Period  n/a     MMCME2_ADV/CLKFBOUT  n/a            1.249         50.000      48.751     MMCME2_ADV_X1Y0  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKFBOUT
+Min Period  n/a     MMCME2_ADV/CLKFBIN   n/a            1.249         50.000      48.751     MMCME2_ADV_X1Y0  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKFBIN
+Max Period  n/a     MMCME2_ADV/CLKFBIN   n/a            100.000       50.000      50.000     MMCME2_ADV_X1Y0  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKFBIN
+Max Period  n/a     MMCME2_ADV/CLKFBOUT  n/a            213.360       50.000      163.360    MMCME2_ADV_X1Y0  TFT_char_U1/pll/inst/mmcm_adv_inst/CLKFBOUT
+
+
+

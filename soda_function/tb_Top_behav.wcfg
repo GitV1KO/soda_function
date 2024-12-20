@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_Top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_Top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="7620001fs"></ZoomEndTime>
+      <Cursor1Time time="6970000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="157"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="10" />
+   <wvobject fp_name="/tb_Top/sys_clk" type="logic">
+      <obj_property name="ElementShortName">sys_clk</obj_property>
+      <obj_property name="ObjectShortName">sys_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top/key_in1" type="logic">
+      <obj_property name="ElementShortName">key_in1</obj_property>
+      <obj_property name="ObjectShortName">key_in1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top/key_in2" type="logic">
+      <obj_property name="ElementShortName">key_in2</obj_property>
+      <obj_property name="ObjectShortName">key_in2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top/key_in3" type="logic">
+      <obj_property name="ElementShortName">key_in3</obj_property>
+      <obj_property name="ObjectShortName">key_in3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top/Top_inst/dollars_in" type="array">
+      <obj_property name="ElementShortName">dollars_in[23:0]</obj_property>
+      <obj_property name="ObjectShortName">dollars_in[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top/Top_inst/dollars_out1" type="array">
+      <obj_property name="ElementShortName">dollars_out1[23:0]</obj_property>
+      <obj_property name="ObjectShortName">dollars_out1[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top/Top_inst/dollars_out2" type="array">
+      <obj_property name="ElementShortName">dollars_out2[23:0]</obj_property>
+      <obj_property name="ObjectShortName">dollars_out2[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top/Top_inst/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top/Top_inst/done" type="logic">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top/Top_inst/miao_cnt" type="array">
+      <obj_property name="ElementShortName">miao_cnt[3:0]</obj_property>
+      <obj_property name="ObjectShortName">miao_cnt[3:0]</obj_property>
+   </wvobject>
+</wave_config>

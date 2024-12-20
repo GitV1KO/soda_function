@@ -1,0 +1,751 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:40:23 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 26900
+License: Customer
+
+Current time: 	Wed Dec 18 13:43:58 CST 2024
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 20
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 1
+Available disk space: 29 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	F:/ElectronicWork/Software/vivado2019.2/Vivado/2019.2/tps/win64/jre9.0.4
+Java executable location: 	F:/ElectronicWork/Software/vivado2019.2/Vivado/2019.2/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	1
+User home directory: C:/Users/admin
+User working directory: F:/ElectronicWork/Projects/vivado2019.2/soda_function
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: F:/ElectronicWork/Software/vivado2019.2/Vivado
+HDI_APPROOT: F:/ElectronicWork/Software/vivado2019.2/Vivado/2019.2
+RDI_DATADIR: F:/ElectronicWork/Software/vivado2019.2/Vivado/2019.2/data
+RDI_BINDIR: F:/ElectronicWork/Software/vivado2019.2/Vivado/2019.2/bin
+
+Vivado preferences file location: C:/Users/admin/AppData/Roaming/Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: C:/Users/admin/AppData/Roaming/Xilinx/Vivado/2019.2/
+Vivado layouts directory: C:/Users/admin/AppData/Roaming/Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	F:/ElectronicWork/Software/vivado2019.2/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	F:/ElectronicWork/Projects/vivado2019.2/soda_function/vivado.log
+Vivado journal file location: 	F:/ElectronicWork/Projects/vivado2019.2/soda_function/vivado.jou
+Engine tmp dir: 	F:/ElectronicWork/Projects/vivado2019.2/soda_function/.Xil/Vivado-26900-V1KO-PC
+
+Xilinx Environment Variables
+----------------------------
+NO_XILINX_DATA_LICENSE: HIDDEN
+XILINX: F:/ElectronicWork/Software/vivado2019.2/Vivado/2019.2/ids_lite/ISE
+XILINX_DSP: F:/ElectronicWork/Software/vivado2019.2/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: F:/ElectronicWork/Software/vivado2019.2/Vivado/2019.2
+XILINX_SDK: F:/ElectronicWork/Software/vivado2019.2/Vitis/2019.2
+XILINX_VITIS: F:/ElectronicWork/Software/vivado2019.2/Vitis/2019.2
+XILINX_VIVADO: F:/ElectronicWork/Software/vivado2019.2/Vivado/2019.2
+XILINX_VIVADO_HLS: F:/ElectronicWork/Software/vivado2019.2/Vivado/2019.2
+
+
+GUI allocated memory:	384 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 972 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 90 MB (+91892kb) [00:00:08]
+// [Engine Memory]: 787 MB (+673503kb) [00:00:08]
+// bB (cr):  Open Project : addNotify
+// Opening Vivado Project: F:\ElectronicWork\Projects\vivado2019.2\soda_function\soda_function.xpr. Version: Vivado v2019.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 927 MB (+105967kb) [00:00:11]
+// [GUI Memory]: 106 MB (+11893kb) [00:00:11]
+// [GUI Memory]: 113 MB (+2326kb) [00:00:12]
+// WARNING: HEventQueue.dispatchEvent() is taking  1863 ms.
+// Tcl Message: open_project F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/admin/Desktop/111/soda_function' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/ElectronicWork/Software/vivado2019.2/Vivado/2019.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 976 MB. GUI used memory: 58 MB. Current time: 12/18/24, 1:43:59 PM CST
+// [Engine Memory]: 976 MB (+2280kb) [00:00:13]
+// Project name: soda_function; location: F:/ElectronicWork/Projects/vivado2019.2/soda_function; part: xc7z020clg400-2
+dismissDialog("Open Project"); // bB (cr)
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v)]", 1); // B (F, cr)
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 7, true); // B (F, cr) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 7); // B (F, cr)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 7); // B (F, cr)
+// Elapsed time: 24 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 8); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_Top (tb_Top.v)]", 10, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_Top (tb_Top.v)]", 10, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 9); // B (F, cr)
+// Elapsed time: 330 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v)]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v)]", 1, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v)]", 1); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), U2 : key_filter (key_filter.v)]", 3, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), U1 : key_filter (key_filter.v)]", 2, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), U1 : key_filter (key_filter.v)]", 2, false, false, false, false, false, true); // B (F, cr) - Double Click
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v)]", 1); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v)]", 1); // B (F, cr)
+// Elapsed time: 316 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v)]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), U1 : key_filter (key_filter.v)]", 2, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v)]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), U1 : key_filter (key_filter.v)]", 2, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), U2 : key_filter (key_filter.v)]", 3, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), U3 : key_filter (key_filter.v)]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), U1 : key_filter (key_filter.v)]", 2, false); // B (F, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_Top.v", 1); // i (h, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 9); // B (F, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,015 MB. GUI used memory: 61 MB. Current time: 12/18/24, 1:56:24 PM CST
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 7); // B (F, cr)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 8); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 8); // B (F, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // i (h, cr)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_Top.v", 1); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top.v", 2); // i (h, cr)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectCodeEditor("Top.v", 257, 185); // ch (w, cr)
+typeControlKey((HResource) null, "Top.v", 'c'); // ch (w, cr)
+// Elapsed time: 39 seconds
+selectCodeEditor("Top.v", 183, 99); // ch (w, cr)
+selectCodeEditor("Top.v", 187, 145); // ch (w, cr)
+// Elapsed time: 10 seconds
+selectCodeEditor("Top.v", 111, 130); // ch (w, cr)
+selectCodeEditor("Top.v", 155, 131); // ch (w, cr)
+selectCodeEditor("Top.v", 125, 128); // ch (w, cr)
+selectCodeEditor("Top.v", 32, 149); // ch (w, cr)
+selectCodeEditor("Top.v", 147, 151); // ch (w, cr)
+selectCodeEditor("Top.v", 123, 145); // ch (w, cr)
+selectCodeEditor("Top.v", 139, 149); // ch (w, cr)
+// Elapsed time: 36 seconds
+selectCodeEditor("Top.v", 159, 173); // ch (w, cr)
+selectCodeEditor("Top.v", 170, 193); // ch (w, cr)
+selectCodeEditor("Top.v", 127, 193); // ch (w, cr)
+selectCodeEditor("Top.v", 193, 195); // ch (w, cr)
+selectCodeEditor("Top.v", 37, 218); // ch (w, cr)
+selectCodeEditor("Top.v", 347, 231); // ch (w, cr)
+// Elapsed time: 55 seconds
+selectCodeEditor("Top.v", 196, 184); // ch (w, cr)
+typeControlKey((HResource) null, "Top.v", 'v'); // ch (w, cr)
+typeControlKey(null, null, 'z');
+selectCodeEditor("Top.v", 195, 197); // ch (w, cr)
+// Elapsed time: 15 seconds
+selectCodeEditor("Top.v", 359, 217); // ch (w, cr)
+typeControlKey((HResource) null, "Top.v", 'v'); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 24 seconds
+selectCodeEditor("Top.v", 355, 124); // ch (w, cr)
+typeControlKey((HResource) null, "Top.v", 'v'); // ch (w, cr)
+selectCodeEditor("Top.v", 362, 150); // ch (w, cr)
+selectCodeEditor("Top.v", 370, 150); // ch (w, cr)
+selectCodeEditor("Top.v", 354, 149); // ch (w, cr)
+typeControlKey((HResource) null, "Top.v", 'v'); // ch (w, cr)
+selectCodeEditor("Top.v", 351, 176); // ch (w, cr)
+selectCodeEditor("Top.v", 551, 176); // ch (w, cr)
+selectCodeEditor("Top.v", 358, 174); // ch (w, cr)
+typeControlKey((HResource) null, "Top.v", 'v'); // ch (w, cr)
+selectCodeEditor("Top.v", 358, 193); // ch (w, cr)
+typeControlKey((HResource) null, "Top.v", 'v'); // ch (w, cr)
+selectCodeEditor("Top.v", 355, 216); // ch (w, cr)
+typeControlKey((HResource) null, "Top.v", 'v'); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Top.v", 513, 243); // ch (w, cr)
+// Elapsed time: 14 seconds
+selectCodeEditor("Top.v", 281, 147); // ch (w, cr)
+typeControlKey((HResource) null, "Top.v", 'v'); // ch (w, cr)
+selectCodeEditor("Top.v", 292, 169); // ch (w, cr)
+selectCodeEditor("Top.v", 338, 163); // ch (w, cr)
+selectCodeEditor("Top.v", 295, 167); // ch (w, cr)
+typeControlKey((HResource) null, "Top.v", 'v'); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Top.v", 235, 194); // ch (w, cr)
+typeControlKey((HResource) null, "Top.v", 'v'); // ch (w, cr)
+selectCodeEditor("Top.v", 217, 217); // ch (w, cr)
+typeControlKey((HResource) null, "Top.v", 'v'); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Top.v", 231, 194); // ch (w, cr)
+selectCodeEditor("Top.v", 219, 221); // ch (w, cr)
+selectCodeEditor("Top.v", 256, 191); // ch (w, cr)
+selectCodeEditor("Top.v", 284, 146); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 18 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), U1 : key_filter (key_filter.v)]", 2, false); // B (F, cr)
+// [GUI Memory]: 120 MB (+1130kb) [00:18:24]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), U1 : key_filter (key_filter.v)]", 2, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), U2 : key_filter (key_filter.v)]", 3, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), U2 : key_filter (key_filter.v)]", 3, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), U3 : key_filter (key_filter.v)]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), U3 : key_filter (key_filter.v)]", 4, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), one_second_timer_U1 : one_second_timer (one_second_timer.v)]", 5, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), one_second_timer_U1 : one_second_timer (one_second_timer.v)]", 5, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectCodeEditor("one_second_timer.v", 259, 182); // ch (w, cr)
+typeControlKey((HResource) null, "one_second_timer.v", 'c'); // ch (w, cr)
+// Elapsed time: 13 seconds
+selectCodeEditor("one_second_timer.v", 417, 176); // ch (w, cr)
+// Elapsed time: 16 seconds
+selectCodeEditor("one_second_timer.v", 223, 57); // ch (w, cr)
+typeControlKey((HResource) null, "one_second_timer.v", 'v'); // ch (w, cr)
+selectCodeEditor("one_second_timer.v", 224, 79); // ch (w, cr)
+typeControlKey((HResource) null, "one_second_timer.v", 'v'); // ch (w, cr)
+selectCodeEditor("one_second_timer.v", 221, 99); // ch (w, cr)
+typeControlKey((HResource) null, "one_second_timer.v", 'v'); // ch (w, cr)
+selectCodeEditor("one_second_timer.v", 218, 122); // ch (w, cr)
+typeControlKey((HResource) null, "one_second_timer.v", 'v'); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("one_second_timer.v", 32, 192); // ch (w, cr)
+typeControlKey((HResource) null, "one_second_timer.v", 'v'); // ch (w, cr)
+selectCodeEditor("one_second_timer.v", 355, 219); // ch (w, cr)
+typeControlKey((HResource) null, "one_second_timer.v", 'v'); // ch (w, cr)
+selectCodeEditor("one_second_timer.v", 230, 260); // ch (w, cr)
+typeControlKey((HResource) null, "one_second_timer.v", 'v'); // ch (w, cr)
+selectCodeEditor("one_second_timer.v", 228, 283); // ch (w, cr)
+typeControlKey((HResource) null, "one_second_timer.v", 'v'); // ch (w, cr)
+selectCodeEditor("one_second_timer.v", 34, 333); // ch (w, cr)
+typeControlKey((HResource) null, "one_second_timer.v", 'v'); // ch (w, cr)
+selectCodeEditor("one_second_timer.v", 94, 265); // ch (w, cr)
+typeControlKey((HResource) null, "one_second_timer.v", 'v'); // ch (w, cr)
+selectCodeEditor("one_second_timer.v", 97, 338); // ch (w, cr)
+typeControlKey((HResource) null, "one_second_timer.v", 'v'); // ch (w, cr)
+// Elapsed time: 14 seconds
+selectCodeEditor("one_second_timer.v", 129, 217); // ch (w, cr)
+typeControlKey((HResource) null, "one_second_timer.v", 'v'); // ch (w, cr)
+selectCodeEditor("one_second_timer.v", 334, 159); // ch (w, cr)
+typeControlKey((HResource) null, "one_second_timer.v", 'v'); // ch (w, cr)
+selectCodeEditor("one_second_timer.v", 323, 173); // ch (w, cr)
+typeControlKey((HResource) null, "one_second_timer.v", 'v'); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("one_second_timer.v", 162, 267); // ch (w, cr)
+typeControlKey((HResource) null, "one_second_timer.v", 'v'); // ch (w, cr)
+selectCodeEditor("one_second_timer.v", 329, 285); // ch (w, cr)
+typeControlKey((HResource) null, "one_second_timer.v", 'v'); // ch (w, cr)
+selectCodeEditor("one_second_timer.v", 317, 311); // ch (w, cr)
+typeControlKey(null, null, 'z');
+selectCodeEditor("one_second_timer.v", 318, 312); // ch (w, cr)
+typeControlKey((HResource) null, "one_second_timer.v", 'v'); // ch (w, cr)
+selectCodeEditor("one_second_timer.v", 323, 310); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("one_second_timer.v", 488, 304); // ch (w, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), TFT_char_U1 : TFT_char (TFT_char.v)]", 6, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), TFT_char_U1 : TFT_char (TFT_char.v)]", 6, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectCodeEditor("TFT_char.v", 606, 174); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("TFT_char.v", 598, 128); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("TFT_char.v", 615, 312); // ch (w, cr)
+selectCodeEditor("TFT_char.v", 644, 316); // ch (w, cr)
+selectCodeEditor("TFT_char.v", 623, 311); // ch (w, cr)
+selectCodeEditor("TFT_char.v", 472, 180); // ch (w, cr)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("TFT_char.v", 404, 207); // ch (w, cr)
+typeControlKey((HResource) null, "TFT_char.v", 'c'); // ch (w, cr)
+// Elapsed time: 19 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), TFT_char_U1 : TFT_char (TFT_char.v), pll : pll (pll.xci)]", 7); // B (F, cr)
+// A (cr): Show IP Hierarchy: addNotify
+dismissDialog("Show IP Hierarchy"); // A (cr)
+// Elapsed time: 11 seconds
+selectCodeEditor("TFT_char.v", 316, 196); // ch (w, cr)
+selectCodeEditor("TFT_char.v", 356, 104); // ch (w, cr)
+typeControlKey((HResource) null, "TFT_char.v", 'v'); // ch (w, cr)
+selectCodeEditor("TFT_char.v", 358, 125); // ch (w, cr)
+typeControlKey((HResource) null, "TFT_char.v", 'v'); // ch (w, cr)
+// Elapsed time: 24 seconds
+selectCodeEditor("TFT_char.v", 358, 219); // ch (w, cr)
+typeControlKey((HResource) null, "TFT_char.v", 'v'); // ch (w, cr)
+selectCodeEditor("TFT_char.v", 354, 242); // ch (w, cr)
+typeControlKey((HResource) null, "TFT_char.v", 'v'); // ch (w, cr)
+selectCodeEditor("TFT_char.v", 355, 263); // ch (w, cr)
+typeControlKey((HResource) null, "TFT_char.v", 'v'); // ch (w, cr)
+selectCodeEditor("TFT_char.v", 358, 285); // ch (w, cr)
+typeControlKey((HResource) null, "TFT_char.v", 'v'); // ch (w, cr)
+selectCodeEditor("TFT_char.v", 360, 313); // ch (w, cr)
+typeControlKey((HResource) null, "TFT_char.v", 'v'); // ch (w, cr)
+selectCodeEditor("TFT_char.v", 357, 337); // ch (w, cr)
+typeControlKey((HResource) null, "TFT_char.v", 'v'); // ch (w, cr)
+selectCodeEditor("TFT_char.v", 608, 240); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectCodeEditor("TFT_char.v", 263, 124); // ch (w, cr)
+typeControlKey((HResource) null, "TFT_char.v", 'v'); // ch (w, cr)
+selectCodeEditor("TFT_char.v", 260, 146); // ch (w, cr)
+typeControlKey((HResource) null, "TFT_char.v", 'v'); // ch (w, cr)
+selectCodeEditor("TFT_char.v", 261, 170); // ch (w, cr)
+typeControlKey((HResource) null, "TFT_char.v", 'v'); // ch (w, cr)
+selectCodeEditor("TFT_char.v", 260, 195); // ch (w, cr)
+typeControlKey((HResource) null, "TFT_char.v", 'v'); // ch (w, cr)
+selectCodeEditor("TFT_char.v", 263, 216); // ch (w, cr)
+typeControlKey((HResource) null, "TFT_char.v", 'v'); // ch (w, cr)
+selectCodeEditor("TFT_char.v", 259, 241); // ch (w, cr)
+typeControlKey((HResource) null, "TFT_char.v", 'v'); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("TFT_char.v", 1, 307); // ch (w, cr)
+typeControlKey((HResource) null, "TFT_char.v", 'v'); // ch (w, cr)
+selectCodeEditor("TFT_char.v", 597, 316); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 13 seconds
+selectCodeEditor("TFT_char.v", 262, 240); // ch (w, cr)
+selectCodeEditor("TFT_char.v", 255, 236); // ch (w, cr)
+typeControlKey((HResource) null, "TFT_char.v", 'v'); // ch (w, cr)
+selectCodeEditor("TFT_char.v", 258, 260); // ch (w, cr)
+typeControlKey((HResource) null, "TFT_char.v", 'v'); // ch (w, cr)
+selectCodeEditor("TFT_char.v", 266, 286); // ch (w, cr)
+typeControlKey((HResource) null, "TFT_char.v", 'v'); // ch (w, cr)
+selectCodeEditor("TFT_char.v", 258, 332); // ch (w, cr)
+typeControlKey((HResource) null, "TFT_char.v", 'v'); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("TFT_char.v", 467, 336); // ch (w, cr)
+selectCodeEditor("TFT_char.v", 270, 240); // ch (w, cr)
+typeControlKey((HResource) null, "TFT_char.v", 'v'); // ch (w, cr)
+selectCodeEditor("TFT_char.v", 276, 267); // ch (w, cr)
+typeControlKey((HResource) null, "TFT_char.v", 'v'); // ch (w, cr)
+selectCodeEditor("TFT_char.v", 272, 289); // ch (w, cr)
+typeControlKey((HResource) null, "TFT_char.v", 'v'); // ch (w, cr)
+selectCodeEditor("TFT_char.v", 273, 333); // ch (w, cr)
+typeControlKey((HResource) null, "TFT_char.v", 'v'); // ch (w, cr)
+selectCodeEditor("TFT_char.v", 281, 260); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("TFT_char.v", 275, 241); // ch (w, cr)
+typeControlKey((HResource) null, "TFT_char.v", 'v'); // ch (w, cr)
+selectCodeEditor("TFT_char.v", 271, 263); // ch (w, cr)
+typeControlKey((HResource) null, "TFT_char.v", 'v'); // ch (w, cr)
+selectCodeEditor("TFT_char.v", 273, 289); // ch (w, cr)
+typeControlKey((HResource) null, "TFT_char.v", 'v'); // ch (w, cr)
+selectCodeEditor("TFT_char.v", 274, 310); // ch (w, cr)
+typeControlKey((HResource) null, "TFT_char.v", 'v'); // ch (w, cr)
+selectCodeEditor("TFT_char.v", 274, 328); // ch (w, cr)
+typeControlKey((HResource) null, "TFT_char.v", 'v'); // ch (w, cr)
+selectCodeEditor("TFT_char.v", 273, 355); // ch (w, cr)
+typeControlKey((HResource) null, "TFT_char.v", 'v'); // ch (w, cr)
+selectCodeEditor("TFT_char.v", 272, 376); // ch (w, cr)
+typeControlKey((HResource) null, "TFT_char.v", 'v'); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectCodeEditor("TFT_char.v", 274, 103); // ch (w, cr)
+typeControlKey((HResource) null, "TFT_char.v", 'v'); // ch (w, cr)
+selectCodeEditor("TFT_char.v", 271, 127); // ch (w, cr)
+typeControlKey((HResource) null, "TFT_char.v", 'v'); // ch (w, cr)
+selectCodeEditor("TFT_char.v", 270, 144); // ch (w, cr)
+typeControlKey((HResource) null, "TFT_char.v", 'v'); // ch (w, cr)
+selectCodeEditor("TFT_char.v", 271, 170); // ch (w, cr)
+selectCodeEditor("TFT_char.v", 562, 191); // ch (w, cr)
+selectCodeEditor("TFT_char.v", 270, 173); // ch (w, cr)
+typeControlKey((HResource) null, "TFT_char.v", 'v'); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("TFT_char.v", 273, 285); // ch (w, cr)
+typeControlKey((HResource) null, "TFT_char.v", 'v'); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), TFT_char_U1 : TFT_char (TFT_char.v), tft_ctrl_inst : tft_ctrl (tft_ctrl.v)]", 8, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), TFT_char_U1 : TFT_char (TFT_char.v), tft_ctrl_inst : tft_ctrl (tft_ctrl.v)]", 8, false, false, false, false, false, true); // B (F, cr) - Double Click
+// Elapsed time: 26 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), U2 : key_filter (key_filter.v)]", 3, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cr)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cr)
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), TFT_char_U1 : TFT_char (TFT_char.v), tft_ctrl_inst : tft_ctrl (tft_ctrl.v)]", 8, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), TFT_char_U1 : TFT_char (TFT_char.v), tft_ctrl_inst : tft_ctrl (tft_ctrl.v)]", 8, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectCodeEditor("tft_ctrl.v", 604, 176); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), TFT_char_U1 : TFT_char (TFT_char.v)]", 6, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), TFT_char_U1 : TFT_char (TFT_char.v)]", 6, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), TFT_char_U1 : TFT_char (TFT_char.v)]", 6); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), TFT_char_U1 : TFT_char (TFT_char.v), tft_ctrl_inst : tft_ctrl (tft_ctrl.v)]", 8, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), TFT_char_U1 : TFT_char (TFT_char.v)]", 6, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), TFT_char_U1 : TFT_char (TFT_char.v)]", 6, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), TFT_char_U1 : TFT_char (TFT_char.v)]", 6); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), TFT_char_U1 : TFT_char (TFT_char.v), tft_ctrl_inst : tft_ctrl (tft_ctrl.v)]", 8, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), TFT_char_U1 : TFT_char (TFT_char.v), tft_ctrl_inst : tft_ctrl (tft_ctrl.v)]", 8, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectCodeEditor("tft_ctrl.v", 193, 190); // ch (w, cr)
+typeControlKey((HResource) null, "tft_ctrl.v", 'c'); // ch (w, cr)
+// Elapsed time: 23 seconds
+selectCodeEditor("tft_ctrl.v", 256, 202); // ch (w, cr)
+// Elapsed time: 41 seconds
+selectCodeEditor("tft_ctrl.v", 365, 99); // ch (w, cr)
+typeControlKey((HResource) null, "tft_ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_ctrl.v", 357, 122); // ch (w, cr)
+typeControlKey((HResource) null, "tft_ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_ctrl.v", 358, 146); // ch (w, cr)
+typeControlKey((HResource) null, "tft_ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_ctrl.v", 365, 192); // ch (w, cr)
+typeControlKey((HResource) null, "tft_ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_ctrl.v", 366, 219); // ch (w, cr)
+typeControlKey((HResource) null, "tft_ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_ctrl.v", 365, 242); // ch (w, cr)
+typeControlKey((HResource) null, "tft_ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_ctrl.v", 364, 262); // ch (w, cr)
+typeControlKey((HResource) null, "tft_ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_ctrl.v", 361, 268); // ch (w, cr)
+selectCodeEditor("tft_ctrl.v", 362, 288); // ch (w, cr)
+typeControlKey((HResource) null, "tft_ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_ctrl.v", 366, 309); // ch (w, cr)
+typeControlKey((HResource) null, "tft_ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_ctrl.v", 366, 334); // ch (w, cr)
+typeControlKey((HResource) null, "tft_ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_ctrl.v", 367, 357); // ch (w, cr)
+typeControlKey((HResource) null, "tft_ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_ctrl.v", 602, 240); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("tft_ctrl.v", 304, 246); // ch (w, cr)
+typeControlKey((HResource) null, "tft_ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_ctrl.v", 295, 263); // ch (w, cr)
+typeControlKey((HResource) null, "tft_ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_ctrl.v", 296, 288); // ch (w, cr)
+typeControlKey((HResource) null, "tft_ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_ctrl.v", 298, 310); // ch (w, cr)
+typeControlKey((HResource) null, "tft_ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_ctrl.v", 295, 331); // ch (w, cr)
+typeControlKey((HResource) null, "tft_ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_ctrl.v", 302, 263); // ch (w, cr)
+typeControlKey((HResource) null, "tft_ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_ctrl.v", 296, 288); // ch (w, cr)
+typeControlKey((HResource) null, "tft_ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_ctrl.v", 295, 307); // ch (w, cr)
+typeControlKey((HResource) null, "tft_ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_ctrl.v", 299, 334); // ch (w, cr)
+typeControlKey((HResource) null, "tft_ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_ctrl.v", 295, 354); // ch (w, cr)
+typeControlKey((HResource) null, "tft_ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_ctrl.v", 297, 193); // ch (w, cr)
+selectCodeEditor("tft_ctrl.v", 294, 193); // ch (w, cr)
+typeControlKey((HResource) null, "tft_ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_ctrl.v", 293, 217); // ch (w, cr)
+typeControlKey((HResource) null, "tft_ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_ctrl.v", 236, 283); // ch (w, cr)
+typeControlKey((HResource) null, "tft_ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_ctrl.v", 237, 310); // ch (w, cr)
+typeControlKey((HResource) null, "tft_ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_ctrl.v", 610, 179); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectCodeEditor("tft_ctrl.v", 4, 147); // ch (w, cr)
+typeControlKey((HResource) null, "tft_ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_ctrl.v", 1, 147); // ch (w, cr)
+typeControlKey((HResource) null, "tft_ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_ctrl.v", 173, 236); // ch (w, cr)
+typeControlKey((HResource) null, "tft_ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_ctrl.v", 0, 190); // ch (w, cr)
+typeControlKey((HResource) null, "tft_ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_ctrl.v", 0, 218); // ch (w, cr)
+typeControlKey((HResource) null, "tft_ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_ctrl.v", 252, 289); // ch (w, cr)
+typeControlKey((HResource) null, "tft_ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_ctrl.v", 1, 220); // ch (w, cr)
+typeControlKey((HResource) null, "tft_ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_ctrl.v", 0, 268); // ch (w, cr)
+typeControlKey((HResource) null, "tft_ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_ctrl.v", 2, 286); // ch (w, cr)
+typeControlKey((HResource) null, "tft_ctrl.v", 'v'); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), TFT_char_U1 : TFT_char (TFT_char.v), tft_pic_inst : tft_pic (tft_pic.v)]", 9, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), TFT_char_U1 : TFT_char (TFT_char.v), tft_pic_inst : tft_pic (tft_pic.v)]", 9, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectCodeEditor("tft_pic.v", 251, 168); // ch (w, cr)
+typeControlKey((HResource) null, "tft_pic.v", 'c'); // ch (w, cr)
+// Elapsed time: 28 seconds
+selectCodeEditor("tft_pic.v", 259, 309); // ch (w, cr)
+selectCodeEditor("tft_pic.v", 342, 316); // ch (w, cr)
+selectCodeEditor("tft_pic.v", 388, 307); // ch (w, cr)
+// Elapsed time: 33 seconds
+selectCodeEditor("tft_pic.v", 366, 81); // ch (w, cr)
+typeControlKey((HResource) null, "tft_pic.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_pic.v", 351, 109); // ch (w, cr)
+selectCodeEditor("tft_pic.v", 361, 108); // ch (w, cr)
+selectCodeEditor("tft_pic.v", 357, 106); // ch (w, cr)
+typeControlKey((HResource) null, "tft_pic.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_pic.v", 365, 123); // ch (w, cr)
+typeControlKey((HResource) null, "tft_pic.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_pic.v", 364, 150); // ch (w, cr)
+typeControlKey((HResource) null, "tft_pic.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_pic.v", 301, 171); // ch (w, cr)
+typeControlKey((HResource) null, "tft_pic.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_pic.v", 300, 195); // ch (w, cr)
+typeControlKey((HResource) null, "tft_pic.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_pic.v", 304, 217); // ch (w, cr)
+typeControlKey((HResource) null, "tft_pic.v", 'v'); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("tft_pic.v", 358, 267); // ch (w, cr)
+typeControlKey((HResource) null, "tft_pic.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_pic.v", 295, 238); // ch (w, cr)
+typeControlKey((HResource) null, "tft_pic.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_pic.v", 291, 266); // ch (w, cr)
+typeControlKey((HResource) null, "tft_pic.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_pic.v", 283, 308); // ch (w, cr)
+typeControlKey((HResource) null, "tft_pic.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_pic.v", 290, 332); // ch (w, cr)
+typeControlKey((HResource) null, "tft_pic.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_pic.v", 3, 352); // ch (w, cr)
+typeControlKey((HResource) null, "tft_pic.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_pic.v", 292, 376); // ch (w, cr)
+typeControlKey((HResource) null, "tft_pic.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_pic.v", 299, 284); // ch (w, cr)
+typeControlKey((HResource) null, "tft_pic.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_pic.v", 1, 307); // ch (w, cr)
+typeControlKey((HResource) null, "tft_pic.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_pic.v", 298, 334); // ch (w, cr)
+typeControlKey((HResource) null, "tft_pic.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_pic.v", 295, 283); // ch (w, cr)
+typeControlKey((HResource) null, "tft_pic.v", 'c'); // ch (w, cr)
+selectCodeEditor("tft_pic.v", 299, 355); // ch (w, cr)
+typeControlKey((HResource) null, "tft_pic.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_pic.v", 285, 283); // ch (w, cr)
+typeControlKey((HResource) null, "tft_pic.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_pic.v", 275, 314); // ch (w, cr)
+typeControlKey((HResource) null, "tft_pic.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_pic.v", 299, 260); // ch (w, cr)
+typeControlKey((HResource) null, "tft_pic.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_pic.v", 288, 287); // ch (w, cr)
+typeControlKey((HResource) null, "tft_pic.v", 'v'); // ch (w, cr)
+selectCodeEditor("tft_pic.v", 288, 312); // ch (w, cr)
+typeControlKey((HResource) null, "tft_pic.v", 'v'); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("tft_pic.v", 290, 357); // ch (w, cr)
+typeControlKey((HResource) null, "tft_pic.v", 'v'); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 30 seconds
+selectCodeEditor("tft_pic.v", 234, 100); // ch (w, cr)
+typeControlKey((HResource) null, "tft_pic.v", 'c'); // ch (w, cr)
+// Elapsed time: 24 seconds
+selectCodeEditor("tft_pic.v", 272, 189); // ch (w, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, LED.xdc]", 12, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, LED.xdc]", 12, false, false, false, false, false, true); // B (F, cr) - Double Click
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 11, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 11, true, false, false, false, true, false); // B (F, cr) - Popup Trigger - Node
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "Constraint Set Properties..."); // ai (ao, cr)
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 11, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 11, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 11); // B (F, cr)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_CREATE_FILE, "Create File"); // a (E, c)
+// Tcl Command: 'file mkdir F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/constrs_1'
+// C (cr): Create Constraints File: addNotify
+// Tcl Message: file mkdir F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/constrs_1 
+setText(PAResourceAtoD.CreateConstraintsFilePanel_FILE_NAME, "11"); // ac (D, C)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (C)
+dismissDialog("Create Constraints File"); // C (cr)
+selectTable(PAResourceAtoD.ConstraintsChooserPanel_FILE_TABLE, "11.xdc ; <Local to Project>", 1, "<Local to Project>", 1); // t (O, c)
+selectTable(PAResourceAtoD.ConstraintsChooserPanel_FILE_TABLE, "11.xdc ; <Local to Project>", 1, "<Local to Project>", 1, false, false, false, false, true); // t (O, c) - Double Click
+selectTable(PAResourceAtoD.ConstraintsChooserPanel_FILE_TABLE, "11.xdc ; <Local to Project>", 1, "<Local to Project>", 1); // t (O, c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 17 seconds
+// Tcl Command: 'file mkdir F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/constrs_1/new'
+dismissDialog("Add Sources"); // c (cr)
+// Tcl Message: file mkdir F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/constrs_1/new 
+// Tcl Message: close [ open F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/constrs_1/new/11.xdc w ] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset constrs_1 F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/constrs_1/new/11.xdc 
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, LED.xdc]", 12, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, 11.xdc]", 13, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, 11.xdc]", 13, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, 11.xdc]", 13, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ai (ao, cr)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cr): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cr)
+// Tcl Message: export_ip_user_files -of_objects  [get_files F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/constrs_1/new/11.xdc] -no_script -reset -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  -fileset constrs_1 F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/constrs_1/new/11.xdc 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 11, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, LED.xdc]", 12, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, LED.xdc]", 12, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ai (ao, cr)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cr): Remove Sources: addNotify
+dismissDialog("Remove Sources"); // aE (cr)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+dismissDialog("Add Sources"); // c (cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 11, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 11, true, false, false, false, true, false); // B (F, cr) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES, "Add Files"); // a (E, c)
+// Elapsed time: 13 seconds
+dismissFileChooser();
+// 'h' command handler elapsed time: 16 seconds
+dismissDialog("Add Sources"); // c (cr)
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 127 MB (+1142kb) [00:37:28]
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, LED.xdc]", 12, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, LED.xdc]", 12, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ai (ao, cr)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cr): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cr)
+// Tcl Message: export_ip_user_files -of_objects  [get_files F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/LED.xdc] -no_script -reset -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  -fileset constrs_1 F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/LED.xdc 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 11, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 10, true); // B (F, cr) - Node
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES, "Add Files"); // a (E, c)
+// Elapsed time: 13 seconds
+selectButton(RDIResource.HJFileChooserHelpers_REFRESH_FOLDER_VIEW_TO_REFLECT_EXTERNAL, (String) null); // a (b, JDialog)
+selectButton(RDIResource.HJFileChooserHelpers_REFRESH_FOLDER_VIEW_TO_REFLECT_EXTERNAL, (String) null); // a (b, JDialog)
+selectButton(RDIResource.HJFileChooserHelpers_REFRESH_FOLDER_VIEW_TO_REFLECT_EXTERNAL, (String) null); // a (b, JDialog)
+selectButton(RDIResource.HJFileChooserHelpers_REFRESH_FOLDER_VIEW_TO_REFLECT_EXTERNAL, (String) null); // a (b, JDialog)
+selectButton(RDIResource.HJFileChooserHelpers_REFRESH_FOLDER_VIEW_TO_REFLECT_EXTERNAL, (String) null); // a (b, JDialog)
+selectButton(RDIResource.HJFileChooserHelpers_REFRESH_FOLDER_VIEW_TO_REFLECT_EXTERNAL, (String) null); // a (b, JDialog)
+selectButton(RDIResource.HJFileChooserHelpers_REFRESH_FOLDER_VIEW_TO_REFLECT_EXTERNAL, (String) null); // a (b, JDialog)
+selectButton(RDIResource.HJFileChooserHelpers_REFRESH_FOLDER_VIEW_TO_REFLECT_EXTERNAL, (String) null); // a (b, JDialog)
+selectButton(RDIResource.HJFileChooserHelpers_REFRESH_FOLDER_VIEW_TO_REFLECT_EXTERNAL, (String) null); // a (b, JDialog)
+dismissFileChooser();
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES, "Add Files"); // a (E, c)
+// Elapsed time: 17 seconds
+dismissFileChooser();
+// 'h' command handler elapsed time: 49 seconds
+dismissDialog("Add Sources"); // c (cr)
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 10, true, false, false, false, true, false); // B (F, cr) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 10, true); // B (F, cr) - Node
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES, "Add Files"); // a (E, c)
+// Elapsed time: 23 seconds
+setFileChooser("F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/constrs_1/new/LED.xdc");
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 29 seconds
+dismissDialog("Add Sources"); // c (cr)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset constrs_1 -norecurse F:/ElectronicWork/Projects/vivado2019.2/soda_function/soda_function.srcs/constrs_1/new/LED.xdc 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 11); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, LED.xdc]", 12, false); // B (F, cr)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v)]", 1); // B (F, cr)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 3); // B (F, cr)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_Top (tb_Top.v)]", 6); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_Top (tb_Top.v)]", 6); // B (F, cr)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_Top (tb_Top.v)]", 6); // B (F, cr)
+// Elapsed time: 20 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 5); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 5); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_Top (tb_Top.v), Top_inst : Top (Top.v)]", 7, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_Top (tb_Top.v), Top_inst : Top (Top.v), one_second_timer_U1 : one_second_timer (one_second_timer.v)]", 11, false, false, false, false, false, true); // B (F, cr) - Double Click
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_Top (tb_Top.v), Top_inst : Top (Top.v)]", 7); // B (F, cr)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_Top (tb_Top.v)]", 6); // B (F, cr)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 5); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 5); // B (F, cr)
+// Elapsed time: 85 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_Top (tb_Top.v)]", 6, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_Top (tb_Top.v)]", 6, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectCodeEditor("tb_Top.v", 683, 218); // ch (w, cr)
+selectCodeEditor("tb_Top.v", 31, 71); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_Top (tb_Top.v)]", 6); // B (F, cr)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_Top (tb_Top.v)]", 6); // B (F, cr)
+selectCodeEditor("tb_Top.v", 174, 163); // ch (w, cr)
+typeControlKey((HResource) null, "tb_Top.v", 'c'); // ch (w, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,015 MB. GUI used memory: 68 MB. Current time: 12/18/24, 2:26:25 PM CST
+// Elapsed time: 54 seconds
+selectCodeEditor("tb_Top.v", 320, 192); // ch (w, cr)
+// Elapsed time: 46 seconds
+selectCodeEditor("tb_Top.v", 113, 117); // ch (w, cr)
+selectCodeEditor("tb_Top.v", 118, 108); // ch (w, cr)
+selectCodeEditor("tb_Top.v", 110, 135); // ch (w, cr)
+selectCodeEditor("tb_Top.v", 106, 152); // ch (w, cr)
+selectCodeEditor("tb_Top.v", 113, 167); // ch (w, cr)
+selectCodeEditor("tb_Top.v", 125, 104); // ch (w, cr)
+selectCodeEditor("tb_Top.v", 116, 132); // ch (w, cr)
+selectCodeEditor("tb_Top.v", 118, 166); // ch (w, cr)
+selectCodeEditor("tb_Top.v", 95, 201); // ch (w, cr)
+selectCodeEditor("tb_Top.v", 125, 217); // ch (w, cr)
+selectCodeEditor("tb_Top.v", 131, 250); // ch (w, cr)
+selectCodeEditor("tb_Top.v", 125, 265); // ch (w, cr)
+selectCodeEditor("tb_Top.v", 103, 183); // ch (w, cr)
+// Elapsed time: 116 seconds
+typeControlKey(null, null, 'z');
